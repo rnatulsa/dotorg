@@ -1,15 +1,11 @@
-import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import Layout from '@/components/layout'
+import Title from '@/components/title'
 
 export default function Home() {
-  return (
-    <Layout>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href={`${process.env.BASE_PATH || ''}/favicon.ico`} />
-      </Head>
+  return <>
+    <Title>Home</Title>
 
+    <div>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -61,6 +57,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </Layout>
-  )
+    </div>
+  </>
 }

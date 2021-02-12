@@ -1,12 +1,11 @@
-import logo from '@/images/logo.png'
+import Header from '@/components/header'
 
 export default function Layout({ children }) {
   return (
-    <>
-      <header>
-        <img src={logo} alt="Logo" />
-      </header>
+    <div className="; lg:container mx-auto">
+      <Header />
+
       {children}
-    </>
+    </div>
   )
 }
