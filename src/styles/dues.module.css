@@ -1,0 +1,25 @@
+.rates > div {
+  @apply pt-0;
+}
+
+.rates h5 {
+  @apply text-center;
+  @apply text-wixColor15;
+}
+
+.rates ul {
+  @apply list-disc;
+}
+
+.rates li span {
+  @apply font-bold;
+  @apply uppercase;
+}
+
+.paypalButtons {
+  @apply text-center;
+}
+
+.paypalButtons p {
+  @apply font-bold;
+}

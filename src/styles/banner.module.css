@@ -1,0 +1,41 @@
+.root {
+  @apply relative;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply bg-white;
+
+  height: calc((100vw - 0px) * 0.4);
+  min-height: 200px;
+  max-height: 362px;
+}
+
+.background {
+  @apply absolute;
+  @apply inset-0;
+  @apply bg-center;
+  @apply bg-cover;
+
+  opacity: 0.9;
+}
+
+.content {
+  @apply relative;
+  @apply text-center;
+  @apply text-white;
+  @apply font-bold;
+
+  font-size: 18px;
+  text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+
+.content h2 {
+  @apply uppercase;
+  @apply font-serif;
+  @apply leading-none;
+  @apply mt-0;
+  @apply mb-4;
+
+  font-size: 40px;
+  letter-spacing: 0.2em;
+}

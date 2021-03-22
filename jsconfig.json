@@ -5,6 +5,12 @@
       "@/*": [
         "src/*"
       ]
-    },
+    }
   },
+  "exclude": [
+    ".next",
+    ".tmp",
+    "node_modules",
+    "out"
+  ]
 }

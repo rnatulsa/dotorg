@@ -1,0 +1,41 @@
+.root {
+  @apply container;
+  @apply mx-auto;
+  @apply p-8;
+}
+
+.root h5 {
+  @apply uppercase;
+  @apply text-wixColor24;
+  @apply mb-8;
+
+  font-size: 20px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+
+.root h6 {
+  @apply font-serif;
+  @apply font-bold;
+  @apply uppercase;
+  @apply text-wixColor25;
+  @apply mb-6;
+
+  font-size: 18px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+
+.root p {
+  @apply my-4;
+}
+
+.root a {
+  @apply underline;
+  @apply text-wixColor24;
+}
+
+@screen sm {
+  .root {
+    @apply flex;
+    @apply space-x-8;
+  }
+}

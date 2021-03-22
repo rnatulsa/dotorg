@@ -1,11 +1,21 @@
 import Header from '@/components/header'
+import Footer from '@/components/footer'
+import styles from '@/styles/layout.module.css'
 
 export default function Layout({ children }) {
   return (
-    <div className="; lg:container mx-auto">
-      <Header />
+    <div className={styles.layout}>
+      <div className={styles.header}>
+        <Header />
+      </div>
 
-      {children}
+      <main className={styles.content}>
+        {children}
+      </main>
+
+      <div className={styles.footer}>
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,33 @@
+.tile {
+  @apply flex-1;
+  @apply relative;
+
+  width: 100%;
+  min-height: 45vw;
+}
+
+@screen md {
+  .tile {
+    width: 45vw;
+    min-height: 45vw;
+  }
+}
+
+.iconTile {
+  @apply relative;
+  @apply block;
+  @apply bg-center;
+  @apply bg-no-repeat;
+  @apply bg-cover;
+
+  width: 100%;
+  min-height: 30vw;
+  /* min-height: 10rem; */
+}
+
+@screen sm {
+  .iconTile {
+    width: 30vw;
+    height: 30vw;
+  }
+}

@@ -1,0 +1,83 @@
+.gallery {
+  @apply relative;
+  @apply w-full;
+  @apply h-full;
+}
+
+.galleryImages {
+  @apply absolute;
+  @apply inset-0;
+}
+
+.galleryImage {
+  @apply absolute;
+  @apply inset-0;
+  @apply bg-black;
+  @apply bg-cover;
+  @apply bg-center;
+  @apply bg-no-repeat;
+  @apply opacity-0;
+
+  transition: opacity 1s ease 0s;
+}
+
+.galleryImageVisible {
+  @apply opacity-100;
+}
+
+.galleryOverlay {
+  @apply text-center;
+  @apply text-white;
+  @apply uppercase;
+  @apply absolute;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.galleryText {
+  @apply font-bold;
+  @apply leading-none;
+
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, 0.498039) -1px -1px 0px,
+               rgba(0, 0, 0, 0.498039) -1px 1px 0px,
+               rgba(0, 0, 0, 0.498039) 1px 1px 0px,
+               rgba(0, 0, 0, 0.498039) 1px -1px 0px
+}
+
+@screen sm {
+  .galleryText {
+    font-size: 5vw;
+  }
+}
+
+.galleryText > span {
+  @apply whitespace-nowrap;
+}
+
+.galleryButtons {
+  @apply flex;
+  @apply justify-center;
+  @apply mt-8;
+  @apply mb-12;
+}
+
+.galleryButton {
+  @apply block;
+  @apply flex-none;
+  @apply px-12;
+  @apply py-2;
+
+  @apply bg-wixColor25;
+  --tw-bg-opacity: 0.8;
+
+  font-size: 16px;
+  transition: background-color 0.4s ease 0s;
+}
+
+.galleryButton:hover {
+  @apply bg-wixColor14;
+  --tw-bg-opacity: 0.8;
+}

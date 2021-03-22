@@ -1,0 +1,38 @@
+/* https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css */
+
+.layout {
+  @apply flex;
+  @apply flex-col;
+  @apply h-full;
+}
+
+.header {
+  @apply flex-none;
+  @apply mx-auto;
+  @apply container;
+}
+
+@screen lg {
+  .header {
+  }
+}
+
+.content {
+  @apply flex-1;
+  @apply p-0;
+}
+.content::after {
+  content: none;
+}
+
+.content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  /* margin-top: var(--space); */
+  height: 0px;
+  visibility: hidden;
+}
+
+.footer {
+  @apply flex-none;
+}

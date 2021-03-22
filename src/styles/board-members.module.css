@@ -1,0 +1,42 @@
+.header {
+  @apply text-wixColor24;
+  @apply font-serif;
+  @apply my-8;
+
+  font-size: 35px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+.header span {
+  @apply relative;
+  @apply border-wixColor13;
+  @apply px-2;
+  @apply pb-3;
+
+  border-bottom-width: 3px;
+}
+.header span::after {
+  @apply border-wixColor13;
+  @apply border-b;
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -7px;
+  left: 0;
+}
+
+.name {
+  @apply font-serif;
+  @apply italic;
+
+  font-size: 20px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px
+}
+
+.title {
+  font-size: 12px;
+}
+
+.pastTitle {
+  font-size: 12px;
+}

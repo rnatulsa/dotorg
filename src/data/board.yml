@@ -1,0 +1,34 @@
+---
+members:
+  - name: P. Casey Morgan
+    image: casey.jpg
+    title: President
+  - name: Charlie Floyd
+    image: charlie.jpg
+    title: Vice President
+  - name: Amber Helvey
+    image: amber.jpg
+    title: Treasurer
+  - name: Cassie DeLozier Miller
+    image: cassie.jpg
+    title: Secretary
+  - name: Arena Mueller
+    image: arena.jpg
+    title: Historian
+  - name: Andrew Carlson
+    image: andrew.jpg
+    title: Member At-Large
+  - name: Angela Flax
+    image: angela.jpg
+    title: Member At-Large
+  - name: Glenn Hall
+    image: glenn.jpg
+    title: Member At-Large
+    pastTitle: Past President & Treasurer
+  - name: Kristin Marangoni
+    image: kristin.jpg
+    pastTitle: Member At-Large
+  - name: Tom Neal
+    image: tom.jpg
+    title: Member At-Large
+    pastTitle: Past President & Secretary

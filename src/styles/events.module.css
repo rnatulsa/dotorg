@@ -1,0 +1,46 @@
+.scavengerHunt {
+  @apply text-center;
+}
+
+@screen sm {
+  .scavengerHunt {
+    @apply flex;
+  }
+}
+
+.scavengerHunt p {
+  @apply my-4;
+}
+
+.scavengerHunt a {
+  @apply underline;
+}
+
+.scavengerHunt h2 {
+  @apply font-bold;
+  @apply leading-none;
+  @apply uppercase;
+
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+
+.scavengerHunt h2 a {
+  @apply block;
+  @apply text-white;
+
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}
+
+.scavengerHunt h2 span {
+  @apply block;
+  @apply text-white;
+}
+
+.button {
+  @apply bg-wixColor25;
+  @apply text-white;
+  @apply no-underline !important;
+  @apply p-2;
+  @apply inline-block;
+}
