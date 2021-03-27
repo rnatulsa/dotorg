@@ -42,18 +42,18 @@ export default function Home() {
       <h2>Upcoming Events</h2>
       <div className={styles.upcomingEvents}>
         <div className={styles.upcomingEvent}>
-          <h5><Link href="/events"><a>Scavenger Hunt</a></Link></h5>
+          <h5><Link href="/events#scavenger-hunt"><a>Scavenger Hunt</a></Link></h5>
           <p>
             <b>Self-Guided Scavenger Hunt</b><br />
             Find Neighborhood Treasures<br />
             Play Whenever You Want!
           </p>
           <div>
-            <Link href="/events"><a>more info »</a></Link>
+            <Link href="/events#scavenger-hunt"><a>more info »</a></Link>
           </div>
         </div>
         <div className={styles.upcomingEvent}>
-          <h5><Link href="/events"><a>TBA</a></Link></h5>
+          <h5><Link href="/events#rna-general-meeting"><a>TBA</a></Link></h5>
           <p>
             <b>RNA General Meeting</b><br />
             Campbell Hotel Ballroom<br />
@@ -61,18 +61,17 @@ export default function Home() {
             Canceled Until Further Notice
           </p>
           <div>
-            <Link href="/events"><a>more info »</a></Link>
+            <Link href="/events#rna-general-meeting"><a>more info »</a></Link>
           </div>
         </div>
         <div className={styles.upcomingEvent}>
-          <h5><Link href="/events"><a>TBA</a></Link></h5>
+          <h5><Link href="/events#neighborhood-yard-sale"><a>May 22-23</a></Link></h5>
           <p>
             <b>Neighborhood Yard Sale</b><br />
-            Your Front Yard<br />
-            Canceled Until Further Notice
+            Your Front Yard
           </p>
           <div>
-            <Link href="/events"><a>more info »</a></Link>
+            <Link href="/events#neighborhood-yard-sale"><a>more info »</a></Link>
           </div>
         </div>
       </div>

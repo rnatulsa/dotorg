@@ -65,7 +65,7 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
-    <div className={styles.scavengerHunt}>
+    <div className={styles.scavengerHunt} id="scavenger-hunt">
       <div className="; flex-1 p-4 text-white bg-wixColor25">
         <h2 className="; text-wixColor21">Scavenger <span>Hunt</span></h2>
         <p>Bored with staying in the house? We've got the perfect game for you! We created a self-guided scavenger hunt for you to find special spots within our neighborhood. While having fun, you will hone your observation skills to see things you've never noticed before!</p>
@@ -113,9 +113,8 @@ export default function Events() {
       </div>
 
       <div>
-        <h6>“Second Friday” Meet-n-Greet Canceled for Now</h6>
-        <p>Due to the measures being taken nationally to quell the spread of the COVID-19 virus, this event and all other RNA events are canceled until further notice. The brewery is still available for curbside pickup of your favorite brew. Contact them for details.</p>
-        <p>In normal times, every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
+        <h6 id="second-friday">“Second Friday” Meet-n-Greet</h6>
+        <p>Every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
         <p>Renaissance Brewery is located at 12th and Lewis Ave. Be sure to follow them on <a href="https://www.facebook.com/Renaissancebeer/">Facebook</a>.</p>
       </div>
     </Section>
@@ -126,7 +125,7 @@ export default function Events() {
       </div>
 
       <div>
-        <h6>RNA General Meeting TBA</h6>
+        <h6 id="rna-general-meeting">RNA General Meeting TBA</h6>
         <p>Our spring meeting has been canceled for now due to the current national effort to prevent the spread of the COVID-19 virus. We will reschedule when it is safe to do so.</p>
         <p>Renaissance Neighborhood Association holds a meeting at least twice a year, usually in the spring and fall. The meeting is open to all residents and business owners within the Renaissance Neighborhood.</p>
         <p>In normal times, this is an excellent chance to meet other people in the neighborhood and get informed about issues that affect you. We look forward to seeing you when we can safely meet again. Until then, stay healthy neighbors!</p>
@@ -139,10 +138,9 @@ export default function Events() {
       </div>
 
       <div>
-        <h6>Neighborhood Yard Sale TBA</h6>
-        <p>The RNA Yard Sale has been canceled for now due to the current national effort to prevent the spread of the COVID-19 virus. We will reschedule when the medical experts tell the public it is safe to gather in groups again. RNA urges neighbors to practice safe social distancing by not having a sale on your own at this time.</p>
-        <p>When we are able to reschedule, here's how it will work: There is no cost for you to participate! Just gather your treasures and display the in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
-        <p>We look forward to having the sale when life returns to normal. Until then, stay safe and healthy!</p>
+        <h6 id="neighborhood-yard-sale">Neighborhood Yard Sale TBA</h6>
+        <p>The RNA Yard Sale is scheduled for <b>May 22-23</b>, 2021!</p>
+        <p>There is no cost for you to participate! Just gather your treasures and display the in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
       </div>
     </Section>
 
