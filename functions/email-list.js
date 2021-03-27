@@ -1,0 +1,26 @@
+const { getAuthToken } = require('../src/lib/google-sheets/service')
+const { credentials, emailList: {spreadsheetId, spreadsheetTab} } = require('../src/lib/google-sheets/config')
+const { emailListSubmit } = require('../src/lib/google-sheets/data')
+
+async function main({email, name}) {
+  const auth = await getAuthToken({credentials})
+  return await emailListSubmit({auth, spreadsheetId, spreadsheetTab, email, name})
+}
+
+function error(err, statusCode = 500) {
+  return {
+    body: err.toString(),
+    headers: { 'Content-Type': 'application/json' },
+    statusCode
+  }
+}
+
+function ok(data, statusCode = 200) {
+  return {
+    body: JSON.stringify(data),
+    headers: { 'Content-Type': 'application/json' },
+    statusCode
+  }
+}
+
+exports.handler = async (event, _context, _callback) => main(JSON.parse(event.body)).then(ok).catch(error)

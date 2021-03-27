@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '@/components/title'
 import Banner from '@/components/banner'
 import MailboxBanner2 from '@/images/wix/banners/MailboxBanner2.jpg'
+import MessageForm from '@/components/message-form'
 
 import ComputerTable from '@/images/wix/contact/computer-table.jpg'
 import MailTruck from '@/images/wix/contact/mail-truck.jpg'
@@ -73,10 +74,17 @@ export default function Contact() {
 
     <div className="; text-center p-4 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
       <Tile src={ComputerTable}>
-        Send a Message
+        <h5 className="; uppercase m-4" style={{
+          fontSize: '30px',
+          textShadow: 'rgba(0, 0, 0, 0.4) 0px 4px 5px',
+        }}>Send a Message</h5>
+        <MessageForm />
       </Tile>
       <Tile src={MailTruck}>
-        Mail a Letter
+      <h5 className="; uppercase m-4" style={{
+          fontSize: '30px',
+          textShadow: 'rgba(0, 0, 0, 0.4) 0px 4px 5px',
+        }}>Mail a Letter</h5>
 
         <div className="; text-2xl sm:text-4xl bg-white bg-opacity-75 border-wixColor15 border rounded-md m-8 py-8 px-4" style={{
           boxShadow: '-5.00px 8.66px 4px 0px rgba(0, 0, 0, 0.6)',

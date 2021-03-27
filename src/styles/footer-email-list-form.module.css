@@ -1,0 +1,56 @@
+.form {
+  @apply font-sans;
+
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.formDisabled {
+  composes: form;
+  @apply opacity-50;
+}
+
+.formSuccess {
+  composes: form;
+  @apply opacity-0;
+}
+
+.form label {
+  @apply block;
+  @apply my-4;
+}
+
+.form input {
+  @apply border;
+  @apply bg-transparent;
+  @apply w-full;
+  @apply p-2;
+
+  border-color: #999999;
+  color: #999999;
+}
+
+.submitButton {
+  @apply block;
+  @apply text-center;
+  @apply w-full;
+  @apply p-2;
+
+  background-color: rgba(153, 153, 153, 1);
+  color: #2F2E2E;
+}
+
+.successOverlay {
+  @apply absolute;
+  @apply inset-0;
+}
+
+.successOkButton {
+  @apply inline-block;
+  @apply text-center;
+  @apply py-2;
+  @apply px-12;
+
+  background-color: rgba(153, 153, 153, 1);
+  color: #2F2E2E;
+}

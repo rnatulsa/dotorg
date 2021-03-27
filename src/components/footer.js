@@ -1,3 +1,5 @@
+import EmailListForm from '@/components/email-list-form'
+
 export default function Footer() {
   return (
     <footer className="; bg-wixColor15 text-wixColor13" style={{
@@ -49,6 +51,7 @@ export default function Footer() {
           }}>
             Join Our Email List
           </h6>
+          <EmailListForm />
         </div>
       </div>
     </footer>
