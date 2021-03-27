@@ -7,6 +7,7 @@ dev:
 
 build:
 	yarn build
+	[ "$$CONTEXT" = "production" ] && rm out/robots.txt
 
 start:
 	yarn start
