@@ -1,4 +1,5 @@
 import EmailListForm from '@/components/email-list-form'
+import { YEAR } from '@/lib/utils'
 
 export default function Footer() {
   return (
@@ -53,6 +54,11 @@ export default function Footer() {
           </h6>
           <EmailListForm />
         </div>
+
+      </div>
+
+      <div className="; p-4 text-center">
+        © {YEAR} Renaissance Neighborhood Association – Tulsa, OK
       </div>
     </footer>
   )
