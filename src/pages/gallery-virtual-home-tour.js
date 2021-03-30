@@ -78,6 +78,8 @@ export default function VirtualHomeTour() {
           minHeight: '20vh',
           maxWidth: 'calc((90vh - 0px) / 0.5625)'
         }} />
+
+        <p>Photos © Carla Robinson</p>
       </div>
     </Section>
   </>
