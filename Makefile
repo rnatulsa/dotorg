@@ -7,7 +7,8 @@ dev:
 
 build:
 	yarn build
-	[ "$$CONTEXT" = "production" ] && rm out/robots.txt
+	[ ! -f out/robots.txt.$$CONTEXT ] || cp out/robots.txt.$$CONTEXT out/robots.txt
+	rm -f out/robots.txt.*
 
 start:
 	yarn start
