@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^3.0.3",
+    "@tailwindcss/jit": "^0.1.17",
     "autoprefixer": "^10.2.4",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
