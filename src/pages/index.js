@@ -1,10 +1,10 @@
 import React from 'react'
 import Title from '@/components/title'
-import Link from 'next/link'
-import styles from '@/styles/home.module.css'
+import { css } from 'twin.macro'
 
 import { Gallery, GalleryText, GalleryButtons, GalleryButton } from '@/components/gallery'
-import ShadowImage from '@/components/shadow-image'
+import { UpcomingEventsSection, UpcomingEvent} from '@/components/home/upcoming-events'
+import { WhatsNewsSection, WhatsNewsItem} from '@/components/home/whats-news'
 
 import RNAalbum7 from '@/images/wix/home-page/gallery/RNAalbum7.jpg';
 const IMAGES = [
@@ -23,13 +23,15 @@ import RNAshirt1 from '@/images/wix/home-page/news/RNAshirt1.jpg'
 import Alert from '@/images/wix/home-page/news/Alert.jpg'
 import NewRNAsign1 from '@/images/wix/home-page/news/NewRNAsign1.jpg'
 
-
-
 export default function Home() {
   return <>
     <Title>Home</Title>
 
-    <Gallery images={IMAGES} style={{ height: 'calc((100vw - 0px) * 0.5625)', maxHeight: '75vh', minHeight: '20vh' }}>
+    <Gallery images={IMAGES} css={css`
+      height: calc((100vw - 0px) * 0.5625);
+      max-height: 75vh;
+      min-height: 20vh;
+    `}>
       <GalleryText>
         Bringing the best of our past <span>into our future</span>
       </GalleryText>
@@ -38,87 +40,47 @@ export default function Home() {
       </GalleryButtons>
     </Gallery>
 
-    <div className={styles.upcomingEventsSection}>
-      <h2>Upcoming Events</h2>
-      <div className={styles.upcomingEvents}>
-        <div className={styles.upcomingEvent}>
-          <h5><Link href="/events#scavenger-hunt"><a>Scavenger Hunt</a></Link></h5>
-          <p>
-            <b>Self-Guided Scavenger Hunt</b><br />
-            Find Neighborhood Treasures<br />
-            Play Whenever You Want!
-          </p>
-          <div>
-            <Link href="/events#scavenger-hunt"><a>more info »</a></Link>
-          </div>
-        </div>
-        <div className={styles.upcomingEvent}>
-          <h5><Link href="/events#rna-general-meeting"><a>TBA</a></Link></h5>
-          <p>
-            <b>RNA General Meeting</b><br />
-            Campbell Hotel Ballroom<br />
-            11th &amp; Columbia Ave.<br />
-            Canceled Until Further Notice
-          </p>
-          <div>
-            <Link href="/events#rna-general-meeting"><a>more info »</a></Link>
-          </div>
-        </div>
-        <div className={styles.upcomingEvent}>
-          <h5><Link href="/events#neighborhood-yard-sale"><a>May 22-23</a></Link></h5>
-          <p>
-            <b>Neighborhood Yard Sale</b><br />
-            Your Front Yard
-          </p>
-          <div>
-            <Link href="/events#neighborhood-yard-sale"><a>more info »</a></Link>
-          </div>
-        </div>
-      </div>
-    </div>
+    <UpcomingEventsSection title="Upcoming Events">
+      <UpcomingEvent title="Scavenger Hunt" href="/events#scavenger-hunt">
+        <p>
+          <b>Self-Guided Scavenger Hunt</b><br />
+          Find Neighborhood Treasures<br />
+          Play Whenever You Want!
+        </p>
+      </UpcomingEvent>
+      <UpcomingEvent title="TBA" href="/events#rna-general-meeting">
+        <p>
+          <b>RNA General Meeting</b><br />
+          Campbell Hotel Ballroom<br />
+          11th &amp; Columbia Ave.<br />
+          Canceled Until Further Notice
+        </p>
+      </UpcomingEvent>
+      <UpcomingEvent title="May 22-23"  href="/events#neighborhood-yard-sale">
+        <p>
+          <b>Neighborhood Yard Sale</b><br />
+          Your Front Yard
+        </p>
+      </UpcomingEvent>
+    </UpcomingEventsSection>
 
-    <div className={styles.newsSection}>
-      <h2>What’s News?</h2>
-      <div className={styles.news}>
-        <div>
-          <ShadowImage className={styles.newsImage} src={RNAshirt1} />
-          <div className={styles.newsContent}>
-            <h6>RNA Merchandise</h6>
-            <hr />
-            <p>Finally! Now you can show your neighborhood pride by sporting our very own Renaissance logo merchandise. Many shirt designs and colors are available as well as other items such as coffee mugs and tote bags. Get yours today!</p>
-            <div>
-              <Link href="/news"><a>read more »</a></Link>
-            </div>
-          </div>
-        </div>
-        <div>
-          <ShadowImage className={styles.newsImage} src={Alert} />
-          <div className={styles.newsContent}>
-            <h6>Alert Neighbors</h6>
-            <hr />
-            <p>Concerned about crime in the neighborhood? Take action! We have an Alert Neighbors program for our neighborhood but it needs your participation. Each block needs a block captain to coordinate contact information for neighbors on the block.</p>
-            <div>
-              <Link href="/news"><a>read more »</a></Link>
-            </div>
-          </div>
-        </div>
-        <div>
-          <ShadowImage className={styles.newsImage} src={NewRNAsign1} />
-          <div className={styles.newsContent}>
-            <h6>New Entry Signs</h6>
-            <hr />
-            <p>Each entry point to Renaissance now has a new logo sign. The old signs were faded and were missing from several places. Thank you to all who donated to help RNA cover the cost! Logo design by long-time resident Randy Stalcup.</p>
-            <div>
-              <Link href="/news"><a>read more »</a></Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <WhatsNewsSection title="What’s News?">
+      <WhatsNewsItem title="RNA Merchandise" image={RNAshirt1} href="/news#rna-merchandise">
+        <p>Finally! Now you can show your neighborhood pride by sporting our very own Renaissance logo merchandise. Many shirt designs and colors are available as well as other items such as coffee mugs and tote bags. Get yours today!</p>
+      </WhatsNewsItem>
+      <WhatsNewsItem title="Alert Neighbors" image={Alert} href="/news#alert-neighbors">
+        <p>Concerned about crime in the neighborhood? Take action! We have an Alert Neighbors program for our neighborhood but it needs your participation. Each block needs a block captain to coordinate contact information for neighbors on the block.</p>
+      </WhatsNewsItem>
+      <WhatsNewsItem title="New Entry Signs" image={NewRNAsign1} href="/news#new-entry-signs">
+        <p>Each entry point to Renaissance now has a new logo sign. The old signs were faded and were missing from several places. Thank you to all who donated to help RNA cover the cost! Logo design by long-time resident Randy Stalcup.</p>
+      </WhatsNewsItem>
+    </WhatsNewsSection>
 
-    <Gallery images={[
-      RNAalbum7,
-    ]} style={{ height: 'calc((100vw - 0px) * 0.5625)', maxHeight: '40vh', minHeight: '20vh' }}>
+    <Gallery images={[RNAalbum7]} css={css`
+      height: calc((100vw - 0px) * 0.5625);
+      max-height: 40vh;
+      min-height: 20vh;
+    `}>
       <GalleryText>
         We need your support!<br /><span>send your</span> <span>annual dues today</span>
       </GalleryText>

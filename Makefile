@@ -13,6 +13,12 @@ build:
 start:
 	yarn start
 
+clean:
+	rm -rf .next node_modules out yarn-error.log
+
+server:
+	python3 -m http.server --directory out/
+
 # 1024x1024 area
 # resize:
 # 	mogrify -resize '1048576@>' -format jpg -quality 60 *.*

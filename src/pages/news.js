@@ -21,7 +21,7 @@ export default function News() {
       <p>Stay in the Loop</p>
     </Banner>
 
-    <Section>
+    <Section id="rna-merchandise">
       <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={RNAmerchGrid} />
       </div>
@@ -35,7 +35,7 @@ export default function News() {
       </div>
     </Section>
 
-    <Section className="; bg-wixColor12">
+    <Section id="new-entry-signs" className="; bg-wixColor12">
       <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={IMG_9115} />
       </div>
@@ -48,7 +48,7 @@ export default function News() {
       </div>
     </Section>
 
-    <Section>
+    <Section id="alert-neighbors">
       <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={Alert} />
       </div>

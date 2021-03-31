@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import { GlobalStyles } from 'twin.macro'
 import Title from '@/components/title'
 import Head from 'next/head'
 import Layout from '@/components/layout'
@@ -14,6 +15,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
       </Head>
+
+      <GlobalStyles />
 
       <Layout>
         <Component {...pageProps} />
