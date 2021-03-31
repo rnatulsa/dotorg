@@ -5,6 +5,11 @@ const withYaml = require('next-plugin-yaml')
 const withImages = require('next-images')
 
 let nextConfig = {
+  future: {
+    // https://nextjs.org/docs/messages/webpack5
+    webpack5: true,
+  },
+
   // https://nextjs.org/docs/api-reference/next.config.js/basepath
   basePath: process.env.BASE_PATH || '',
 
