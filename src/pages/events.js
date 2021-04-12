@@ -11,6 +11,8 @@ import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
 import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
+import TourGuideArena from '@/images/events/history-walking-tour/tour-guide-arena.jpg'
+
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
 import styles from '@/styles/events.module.css'
@@ -65,6 +67,44 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
+    <Section id="second-friday">
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={BreweryTender} />
+      </div>
+
+      <div>
+        <h6>“Second Friday” Meet-n-Greet</h6>
+        <p>Every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
+        <p>Renaissance Brewery is located at 12th and Lewis Ave. Be sure to follow them on <a href="https://www.facebook.com/Renaissancebeer/">Facebook</a>.</p>
+      </div>
+    </Section>
+
+    <Section id="neighborhood-yard-sale">
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={YardSale} />
+      </div>
+
+      <div>
+        <h6>Neighborhood Yard Sale</h6>
+        <p>The RNA Yard Sale is scheduled for <b>May 22-23</b>, 2021!</p>
+        <p>There is no cost for you to participate! Just gather your treasures and display the in your yard. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
+      </div>
+    </Section>
+
+    <Section id="history-walking-tour">
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={TourGuideArena} />
+      </div>
+
+      <div>
+        <h6>History Walking Tour</h6>
+        <p>RNA Historian, Arena Mueller, will lead three guided history walks through the neighborhood in May.</p>
+        <p>The tour is free, however, with a suggested donation of $10 you will receive a green RNA bracelet and printed map pinned with historic sites. All donations will go to the Renaissance Neighborhood Association. The walk is 1.25 miles and is expected to take 90-120 minutes. Stay tuned for days and times to be shared soon!</p>
+        <p>Reach out to her directly at <a href="mailto:arena300@gmail.com">arena300@gmail.com</a> to arrange a guided tour.</p>
+        <p>It can also be self guided using <a target="_blank" href="https://www.historypin.org/en/renaissance-neighborhood-history-walking-tour-2/geo/36.146068,-95.949558,15/bounds/36.146068,-95.949558,36.146068,-95.949558/paging/1/pin/1153415/project/about">History Pin</a>.</p>
+      </div>
+    </Section>
+
     <div className={styles.scavengerHunt} id="scavenger-hunt">
       <div className="; flex-1 p-4 text-white bg-wixColor25">
         <h2 className="; text-wixColor21">Scavenger <span>Hunt</span></h2>
@@ -109,38 +149,14 @@ export default function Events() {
 
     <Section>
       <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={BreweryTender} />
-      </div>
-
-      <div>
-        <h6 id="second-friday">“Second Friday” Meet-n-Greet</h6>
-        <p>Every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
-        <p>Renaissance Brewery is located at 12th and Lewis Ave. Be sure to follow them on <a href="https://www.facebook.com/Renaissancebeer/">Facebook</a>.</p>
-      </div>
-    </Section>
-
-    <Section>
-      <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={CampbellNow1} />
       </div>
 
-      <div>
-        <h6 id="rna-general-meeting">RNA General Meeting TBA</h6>
+      <div id="rna-general-meeting">
+        <h6>RNA General Meeting TBA</h6>
         <p>Our spring meeting has been canceled for now due to the current national effort to prevent the spread of the COVID-19 virus. We will reschedule when it is safe to do so.</p>
         <p>Renaissance Neighborhood Association holds a meeting at least twice a year, usually in the spring and fall. The meeting is open to all residents and business owners within the Renaissance Neighborhood.</p>
         <p>In normal times, this is an excellent chance to meet other people in the neighborhood and get informed about issues that affect you. We look forward to seeing you when we can safely meet again. Until then, stay healthy neighbors!</p>
-      </div>
-    </Section>
-
-    <Section>
-      <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={YardSale} />
-      </div>
-
-      <div>
-        <h6 id="neighborhood-yard-sale">Neighborhood Yard Sale TBA</h6>
-        <p>The RNA Yard Sale is scheduled for <b>May 22-23</b>, 2021!</p>
-        <p>There is no cost for you to participate! Just gather your treasures and display the in your yard. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
       </div>
     </Section>
 
