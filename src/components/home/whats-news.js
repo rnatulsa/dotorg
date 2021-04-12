@@ -1,4 +1,5 @@
 import tw, { css, theme } from 'twin.macro'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 import ShadowImage from '@/components/shadow-image'
 

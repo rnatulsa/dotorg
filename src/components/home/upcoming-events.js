@@ -32,7 +32,6 @@ export const UpcomingEvent = ({href, title, children, ...props}) => (
   `} {...props}>
     <h5 tw="font-bold leading-none text-wixColor24" css={css`
       font-size: 26px;
-      letter-spacing: 0.2em;
     `}>
       <Link href={href} passHref>
         <a tw="underline">{title}</a>
