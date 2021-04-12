@@ -57,6 +57,7 @@ export default function AboutUs() {
         Other accomplishments of the newly formed RNA include preventing an auto repair shop from expanding into the residential part of the neighborhood and working with the Tulsa Fire Department to locate a new station on 15th Street rather than in the middle of a residential area. RNA continues today to advocate to maintain the charm and integrity of the historic neighborhood.
         <p>Long-time resident, Randy Stalcup designed the current logo which is used for signs that are posted at entries into our neighborhood and in many other forms including our <a href="https://www.teepublic.com/user/rnatulsa">new line of RNA merchandise available for purchase now!</a></p>
         <p>Our neighborhood historian, Arena Mueller writes a blog about home histories. She has unearthed many secrets of the past by researching original house deeds and records. Go on a fascinating journey by reading <a href="https://tulsarenaissancehistory.blogspot.com/">The Renaissance Neighborhood History Project</a>. Arena and her project was featured in the <a href="http://www.tulsapeople.com/Tulsa-People/March-2019/Framing-history/">March 2019 issue of Tulsa People</a>.</p>
+        <p>Longtime RNA Board member, Carla Robinson, designed the neighborhood website and was the webmaster through 2020.</p>
       </div>
 
       <div className="; sm:flex-none sm:w-1/3">
