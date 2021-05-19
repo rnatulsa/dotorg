@@ -47,7 +47,7 @@ export default function Home() {
           Renaissance Brewery
         </p>
       </UpcomingEvent>
-      <UpcomingEvent title="May 22-23"  href="/events#neighborhood-yard-sale">
+      <UpcomingEvent title="June 19-20"  href="/events#neighborhood-yard-sale">
         <p>
           <b>Neighborhood Yard Sale</b><br />
           Your Front Yard
