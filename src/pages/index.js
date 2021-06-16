@@ -52,6 +52,9 @@ export default function Home() {
           <b>Neighborhood Yard Sale</b><br />
           Your Front Yard
         </p>
+        <p>
+          <b><a href="https://goo.gl/maps/2CkeyR7kPvsL26CV8" target="_blank" className="text-red-600 uppercase">View Google Map</a></b>
+        </p>
       </UpcomingEvent>
       <UpcomingEvent title="Throughout May" href="/events#history-walking-tour">
         <p>
