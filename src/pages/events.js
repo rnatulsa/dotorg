@@ -88,6 +88,12 @@ export default function Events() {
         <h6>Neighborhood Yard Sale</h6>
         <p>The RNA Yard Sale is scheduled for <b>June 19-20</b>, 2021!</p>
         <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
+        <p>
+          <b><a href="https://goo.gl/maps/2CkeyR7kPvsL26CV8" target="_blank" className="text-red-600 uppercase">View Google Map</a></b>
+        </p>
+        <div>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1tNlxA0WMKDojFor3CknpXapxVevQrVg8" width="100%" height="480"></iframe>
+        </div>
       </div>
     </Section>
 
