@@ -41,26 +41,17 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
+      <UpcomingEvent title="Tuesday, July 13" href="/events#rna-general-meeting">
+        <p>
+          <b>RNA General Meeting</b><br />
+          Campbell Hotel Ballroom<br />
+          11th &amp; Columbia Ave.
+        </p>
+      </UpcomingEvent>
       <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
         <p>
           <b>“Second Friday” Meet-n-Greet</b><br />
           Renaissance Brewery
-        </p>
-      </UpcomingEvent>
-      <UpcomingEvent title="June 19-20"  href="/events#neighborhood-yard-sale">
-        <p>
-          <b>Neighborhood Yard Sale</b><br />
-          Your Front Yard
-        </p>
-        <p>
-          <b><a href="https://goo.gl/maps/2CkeyR7kPvsL26CV8" target="_blank" className="text-red-600 uppercase">View Google Map</a></b>
-        </p>
-      </UpcomingEvent>
-      <UpcomingEvent title="Throughout May" href="/events#history-walking-tour">
-        <p>
-          <b>History Walking Tour</b><br />
-          RNA Historian will lead guided<br />
-          walks through the neighborhood
         </p>
       </UpcomingEvent>
     </UpcomingEventsSection>

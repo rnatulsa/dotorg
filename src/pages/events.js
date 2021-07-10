@@ -86,14 +86,8 @@ export default function Events() {
 
       <div>
         <h6>Neighborhood Yard Sale</h6>
-        <p>The RNA Yard Sale is scheduled for <b>June 19-20</b>, 2021!</p>
+        <p>Look for the RNA Yard Sale in summer 2022!</p>
         <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
-        <p>
-          <b><a href="https://goo.gl/maps/2CkeyR7kPvsL26CV8" target="_blank" className="text-red-600 uppercase">View Google Map</a></b>
-        </p>
-        <div>
-          <iframe src="https://www.google.com/maps/d/embed?mid=1tNlxA0WMKDojFor3CknpXapxVevQrVg8" width="100%" height="480"></iframe>
-        </div>
       </div>
     </Section>
 
@@ -104,7 +98,6 @@ export default function Events() {
 
       <div>
         <h6>History Walking Tour</h6>
-        <p>RNA Historian, Arena Mueller, will lead three guided history walks through the neighborhood in May.</p>
         <p>The tour is free, however, with a suggested donation of $10 you will receive a green RNA bracelet and printed map pinned with historic sites. All donations will go to the Renaissance Neighborhood Association. The walk is 1.25 miles and is expected to take 90-120 minutes. Stay tuned for days and times to be shared soon!</p>
         <p>Reach out to her directly at <a href="mailto:arena300@gmail.com">arena300@gmail.com</a> to arrange a guided tour.</p>
         <p>It can also be self guided using <a target="_blank" href="https://www.historypin.org/en/renaissance-neighborhood-history-walking-tour-2/geo/36.146068,-95.949558,15/bounds/36.146068,-95.949558,36.146068,-95.949558/paging/1/pin/1153415/project/about">History Pin</a>.</p>
@@ -159,10 +152,9 @@ export default function Events() {
       </div>
 
       <div id="rna-general-meeting">
-        <h6>RNA General Meeting TBA</h6>
-        <p>Our spring meeting has been canceled for now due to the current national effort to prevent the spread of the COVID-19 virus. We will reschedule when it is safe to do so.</p>
+        <h6>RNA General Meeting</h6>
+        <p>Tuesday, July 13 2021</p>
         <p>Renaissance Neighborhood Association holds a meeting at least twice a year, usually in the spring and fall. The meeting is open to all residents and business owners within the Renaissance Neighborhood.</p>
-        <p>In normal times, this is an excellent chance to meet other people in the neighborhood and get informed about issues that affect you. We look forward to seeing you when we can safely meet again. Until then, stay healthy neighbors!</p>
       </div>
     </Section>
 
