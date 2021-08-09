@@ -21,6 +21,7 @@
     "autoprefixer": "^10.2.4",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "contentful": "^8.4.2",
     "google-auth-library": "^7.0.3",
     "googleapis": "^68.0.0",
     "gray-matter": "^4.0.2",
