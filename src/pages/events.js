@@ -11,7 +11,8 @@ import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
 import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
-import TourGuideArena from '@/images/events/history-walking-tour/tour-guide-arena.jpg'
+import TourGuideArena from '@/images/events/history-walking-tour/tour-guide-arena-2.jpg'
+import ChiliFest from '@/images/wix/ChiliFest/Winners2013.jpg'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
@@ -67,27 +68,41 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
-    <Section id="second-friday">
+    <Section id="chilifest-2021">
       <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={BreweryTender} />
+        <ShadowImage src={ChiliFest} />
       </div>
 
       <div>
-        <h6>“Second Friday” Meet-n-Greet</h6>
-        <p>Every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
-        <p>Renaissance Brewery is located at 12th and Lewis Ave. Be sure to follow them on <a href="https://www.facebook.com/Renaissancebeer/">Facebook</a>.</p>
+        <h6>Annual Chili Challenge 2021</h6>
+        <p>
+          Saturday, October 23<br />
+          11am to 1pm<br />
+          Gary Park, 1225 South Gary Place
+        </p>
+        <p>Our annual chili challenge is one of our favorite fall events in the neighborhood. Fix a pot of your favorite chili, bring it hot (no electricity at the location) and join us at Gary Park (new location for this event) for this family-friendly event. Set-up starts at 11 am and tasting/judging starts at noon in three categories – Most Original, Most Traditional and Most Spicy. Come along and join the fun whether or not you’re making chili. Prizes for the winners. RNA will provide everything except the chili. Kids, pets, musical instruments and lawn games welcome. Don’t forget your lawn chair.</p>
       </div>
     </Section>
 
-    <Section id="neighborhood-yard-sale">
+    <Section id="rna-general-meeting">
       <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={YardSale} />
+        <ShadowImage src={CampbellNow1} />
       </div>
 
       <div>
-        <h6>Neighborhood Yard Sale</h6>
-        <p>Look for the RNA Yard Sale in summer 2022!</p>
-        <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
+        <h6>RNA General Meeting</h6>
+        <p>
+          Tuesday, October 26<br />
+          7pm – ballroom of the Campbell Hotel
+        </p>
+        <p>
+          Subject: Interacting With Those Experiencing Homelessness in Our Neighborhood
+        </p>
+        <ul>
+          <li>Mack Haltom, Executive Director, Tulsa Day Center</li>
+          <li>Becky Gligo, Director, Housing Solutions Tulsa</li>
+          <li>Tyler Parette, Director of Outreach and Engagement, Housing Solutions Tulsa</li>
+        </ul>
       </div>
     </Section>
 
@@ -97,12 +112,19 @@ export default function Events() {
       </div>
 
       <div>
-        <h6>History Walking Tour</h6>
-        <p>The tour is free, however, with a suggested donation of $10 you will receive a green RNA bracelet and printed map pinned with historic sites. All donations will go to the Renaissance Neighborhood Association. The walk is 1.25 miles and is expected to take 90-120 minutes. Stay tuned for days and times to be shared soon!</p>
-        <p>Reach out to her directly at <a href="mailto:arena300@gmail.com">arena300@gmail.com</a> to arrange a guided tour.</p>
+        <h6>Fall History Walking Tour</h6>
+        <p>
+          Saturday, October 23 at 10am<br />
+          Sundays, November 7 &amp; 14 at 1pm
+        </p>
+        <p>Meet at 918 Coffee. Participants will receive a green RNA Bracelet and Map. Suggested donation of $10. All proceeds benefit RNA. Reserve your spot by <a href="https://www.signupgenius.com/go/70A0E4DAEAC2CAAF49-renaissance" target="_blank" rel="noopener noreferrer">signing up here</a>.</p>
         <p>It can also be self guided using <a target="_blank" href="https://www.historypin.org/en/renaissance-neighborhood-history-walking-tour-2/geo/36.146068,-95.949558,15/bounds/36.146068,-95.949558,36.146068,-95.949558/paging/1/pin/1153415/project/about">History Pin</a>.</p>
       </div>
     </Section>
+
+
+
+
 
     <div className={styles.scavengerHunt} id="scavenger-hunt">
       <div className="; flex-1 p-4 text-white bg-wixColor25">
@@ -146,15 +168,27 @@ export default function Events() {
       </div>
     </div>
 
-    <Section>
+    <Section id="second-friday">
       <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={CampbellNow1} />
+        <ShadowImage src={BreweryTender} />
       </div>
 
-      <div id="rna-general-meeting">
-        <h6>RNA General Meeting</h6>
-        <p>Tuesday, July 13 2021</p>
-        <p>Renaissance Neighborhood Association holds a meeting at least twice a year, usually in the spring and fall. The meeting is open to all residents and business owners within the Renaissance Neighborhood.</p>
+      <div>
+        <h6>“Second Friday” Meet-n-Greet</h6>
+        <p>Every second Friday of each month, the <a href="https://www.renaissancebeer.com/">Renaissance Brewing Company</a> hosts a social event for residents of our neighborhood. It is a good chance to mingle with other neighbors and have some fun! Of course, your friends and family are also welcome.</p>
+        <p>Renaissance Brewery is located at 12th and Lewis Ave. Be sure to follow them on <a href="https://www.facebook.com/Renaissancebeer/">Facebook</a>.</p>
+      </div>
+    </Section>
+
+    <Section id="neighborhood-yard-sale">
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={YardSale} />
+      </div>
+
+      <div>
+        <h6>Neighborhood Yard Sale</h6>
+        <p>Look for the RNA Yard Sale in summer 2022!</p>
+        <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
       </div>
     </Section>
 
