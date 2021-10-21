@@ -41,17 +41,25 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
+      <UpcomingEvent title="Saturday, October 23" href="/events#chilifest-2021">
+        <p>
+          <b>Chili Challenge 2021</b><br />
+          Gary Park - 11am to 1pm<br />
+          1225 South Gary Pl
+        </p>
+      </UpcomingEvent>
       <UpcomingEvent title="Tuesday, July 13" href="/events#rna-general-meeting">
         <p>
           <b>RNA General Meeting</b><br />
-          Campbell Hotel Ballroom<br />
-          11th &amp; Columbia Ave.
+          Campbell Hotel Ballroom - 7pm<br />
+          11th &amp; Columbia Ave
         </p>
       </UpcomingEvent>
-      <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
+      <UpcomingEvent title="This Fall"  href="/events#history-walking-tour">
         <p>
-          <b>“Second Friday” Meet-n-Greet</b><br />
-          Renaissance Brewery
+          <b>Fall History Tour</b><br />
+          Sat, Oct 23 at 10am<br />
+          Sun, Nov 7 &amp; 14 at 1pm
         </p>
       </UpcomingEvent>
     </UpcomingEventsSection>

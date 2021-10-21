@@ -2,6 +2,3 @@
   command = "make build"
   publish = "out"
   functions = "functions/"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
