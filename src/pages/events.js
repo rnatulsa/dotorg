@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 import Title from '@/components/title'
 import Banner from '@/components/banner'
@@ -75,8 +74,9 @@ export default function Events() {
           Winner crowned: <b>Mon, Dec 20</b>
         </p>
         <p>Hello neighbors! It's time for our 2nd annual Holiday Decoration Contest! This year is much the same as last year- we will have 3 “celebrity” judges (to be announced soon!) and the winner will receive gifts from neighborhood businesses as well as a sign to put in your yard for bragging rights!</p>
-        <p>If you are interested in participating, please fill out the form linked here no later than December 15th. The judges will come by in the evenings at their convenience between the 16th-19th, and the winner will be announced December 20th.</p>
+        <p>If you are interested in participating, please fill out the <a href="https://form.jotform.com/212946785027060" target="_blank">entry form</a> no later than December 15th. The judges will come by in the evenings at their convenience between the 16th-19th, and the winner will be announced December 20th.</p>
         <p>Happy decorating!!</p>
+        <p><a href="https://form.jotform.com/212946785027060" target="_blank">Entry Form</a></p>
       </div>
       <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={HolidayDecorationContest} />
