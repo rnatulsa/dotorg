@@ -10,9 +10,7 @@ import Gallery from '@/components/gallery'
 import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
-import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
-import TourGuideArena from '@/images/events/history-walking-tour/tour-guide-arena-2.jpg'
-import ChiliFest from '@/images/wix/ChiliFest/Winners2013.jpg'
+import HolidayDecorationContest from '@/images/events/holiday-contest/HolidayDecorationContest.jpg'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
@@ -68,15 +66,20 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
-    <Section id="dumpster-days">
+    <Section id="holiday-decoration-contest">
       <div>
-        <h6>Dumpster Days</h6>
+        <h6>Holiday Decoration Contest</h6>
         <p>
-          Friday, November 19 – Monday, November 22<br />
-          <a href="https://goo.gl/maps/ewBpBCxWExh4F9g48" target="_blank">Gary Park, 1225 S Gary Pl</a><br />
-          <a href="https://goo.gl/maps/oUMXbuKbmgki65th9" target="_blank">City View Park, 1326 S Atlanta Ave</a>
+          Entry form deadline: <b>Wed, Dec 15</b><br />
+          Judging period: <b>Thu, Dec 16 — Sun, Dec 19</b><br />
+          Winner crowned: <b>Mon, Dec 20</b>
         </p>
-        <p>Dumpsters will be delivered to two locations in Renaissance sometime the morning of Friday, November 19. These dumpsters fill up FAST and may well be full by 5 pm. They will not be replaced with empty dumpsters because it is a weekend. Dumpsters will be picked up Monday morning, November 22. Please follow the rules about what can and cannot be placed in the dumpsters.</p>
+        <p>Hello neighbors! It's time for our 2nd annual Holiday Decoration Contest! This year is much the same as last year- we will have 3 “celebrity” judges (to be announced soon!) and the winner will receive gifts from neighborhood businesses as well as a sign to put in your yard for bragging rights!</p>
+        <p>If you are interested in participating, please fill out the form linked here no later than December 15th. The judges will come by in the evenings at their convenience between the 16th-19th, and the winner will be announced December 20th.</p>
+        <p>Happy decorating!!</p>
+      </div>
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={HolidayDecorationContest} />
       </div>
     </Section>
 

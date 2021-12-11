@@ -41,12 +41,10 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
-      <UpcomingEvent title="Dumpster Days"  href="/events#dumpster-days">
+      <UpcomingEvent title="Holiday Decoration Contest"  href="/events#holiday-decoration-contest">
         <p>
-          <b>Dumpster Days</b><br />
-          Fri, Nov 19 – Mon, Nov 22<br />
-          <a href="https://goo.gl/maps/ewBpBCxWExh4F9g48" target="_blank">Gary Park, 1225 S Gary Pl</a><br />
-          <a href="https://goo.gl/maps/oUMXbuKbmgki65th9" target="_blank">City View Park, 1326 S Atlanta Ave</a>
+          <b>Second Annual with “celebrity” judges!</b><br />
+          Submit your <a href="https://form.jotform.com/212946785027060" target="_blank" css={css`text-decoration: underline`}>entry form</a> no later than Dec 15
         </p>
       </UpcomingEvent>
       <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
