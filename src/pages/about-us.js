@@ -12,7 +12,9 @@ import FullSizeRender from '@/images/wix/FullSizeRender.jpg'
 import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
 import EntrySign from '@/images/wix/EntrySign.jpg'
 
-export default function AboutUs() {
+import { fetchBoardMembers } from '@/lib/contentful/entries'
+
+export default function AboutUs({boardMembers}) {
   return <>
     <Title>About Us</Title>
 
@@ -67,9 +69,17 @@ export default function AboutUs() {
     </Section>
 
     <Section className="; text-center">
-      <BoardMembers />
+      <BoardMembers members={boardMembers} />
     </Section>
   </>
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      boardMembers: await fetchBoardMembers()
+    }
+  }
 }
 
 /*
