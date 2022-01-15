@@ -41,12 +41,6 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
-      <UpcomingEvent title="Holiday Decoration Contest"  href="/events#holiday-decoration-contest">
-        <p>
-          <b>Second Annual with “celebrity” judges!</b><br />
-          Submit your <a href="https://form.jotform.com/212946785027060" target="_blank" css={css`text-decoration: underline`}>entry form</a> no later than Dec 15
-        </p>
-      </UpcomingEvent>
       <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
         <p>
           <b>“Second Friday” Meet-n-Greet</b><br />
