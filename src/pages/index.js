@@ -41,6 +41,12 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
+      <UpcomingEvent title="May 20-22"  href="/events#neighborhood-yard-sale">
+        <p>
+          <b>Neighborhood Yard Sale</b><br />
+          Your Front Yard
+        </p>
+      </UpcomingEvent>
       <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
         <p>
           <b>“Second Friday” Meet-n-Greet</b><br />
