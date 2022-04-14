@@ -41,6 +41,13 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
+    <UpcomingEvent title="Tuesday, April 19" href="/events#rna-general-meeting">
+        <p>
+          <b>RNA General Meeting</b><br />
+          Campbell Hotel Ballroom - 7pm<br />
+          11th &amp; Columbia Ave
+        </p>
+      </UpcomingEvent>
       <UpcomingEvent title="May 20-22"  href="/events#neighborhood-yard-sale">
         <p>
           <b>Neighborhood Yard Sale</b><br />
