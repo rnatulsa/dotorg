@@ -21,6 +21,15 @@ export default function News() {
       <p>Stay in the Loop</p>
     </Banner>
 
+    <Section id="rna-nco">
+      <div>
+        <h6>RNA General Meeting and Neighborhood Character Overlay Discussion</h6>
+        <p>Our next general meeting is Tuesday, April 19 at 7 pm in the ballroom of the Campbell Hotel at 11th and Columbia. Nathan Foster of the Tulsa Planning Office will be explaining the Neighborhood Character Overlay zoning which is being proposed for the Renaissance Neighborhood.</p>
+        <p><a href="/files/renaissance-zca-18-nco-draft.pdf" target="_blank" rel="noopener noreferrer">Neighborhood Character Overlay (draft)</a> – This is the draft of the Neighborhood Character Overlay zoning that is being proposed for our Renaissance Neighborhood. This will be a long process in which you will have multiple opportunities to ask questions, make suggestions, support or reject this zoning. For more details, please see the document called “NCO Q &amp; A” and/or attend the April 19 general meeting.</p>
+        <p><a href="/files/renaissance-nco-qa.pdf" target="_blank" rel="noopener noreferrer">Neighborhood Character Overlay Q&amp;A</a> – This Q &amp; A was prepared to help answer your questions about the Neighborhood Character Overlay zoning which is being proposed for the Renaissance Neighborhood. The process will take many months and you will have multiple opportunities to ask questions, make suggestions, support or reject this zoning. Please make plans to attend the April 19 to learn more about this zoning.</p>
+      </div>
+    </Section>
+
     <Section id="rna-merchandise">
       <div className="; sm:flex-none sm:w-1/3">
         <ShadowImage src={RNAmerchGrid} />

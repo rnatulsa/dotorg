@@ -10,6 +10,7 @@ import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
 import MidtownGarageSale from '@/images/events/garage-sale/Midtown_Garage_Sale.jpg'
+import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
@@ -64,6 +65,27 @@ export default function Events() {
       <h2>Events</h2>
       <p>Come Join the Fun</p>
     </Banner>
+
+
+    <Section id="rna-general-meeting">
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={CampbellNow1} />
+      </div>
+
+      <div>
+        <h6>RNA General Meeting</h6>
+        <p>
+          Tuesday, April 19<br />
+          7pm – ballroom of the Campbell Hotel
+        </p>
+        <p>
+          Subject: <a href="/news#rna-nco">Neighborhood Character Overlay</a>
+        </p>
+        <ul>
+          <li>Nathan Foster of the Tulsa Planning Office</li>
+        </ul>
+      </div>
+    </Section>
 
     <Section id="neighborhood-yard-sale">
       <div>
