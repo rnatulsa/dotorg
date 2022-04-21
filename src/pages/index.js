@@ -41,11 +41,10 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
-    <UpcomingEvent title="Tuesday, April 19" href="/events#rna-general-meeting">
+    <UpcomingEvent title="Saturday, April 23" href="/events#german-beer-day">
         <p>
-          <b>RNA General Meeting</b><br />
-          Campbell Hotel Ballroom - 7pm<br />
-          11th &amp; Columbia Ave
+          <b>German Beer Day / Oklahoma Beer Book Signing</b><br />
+          Renaissance Brewing Company - 5pm
         </p>
       </UpcomingEvent>
       <UpcomingEvent title="May 20-22"  href="/events#neighborhood-yard-sale">

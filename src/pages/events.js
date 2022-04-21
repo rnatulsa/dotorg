@@ -10,7 +10,7 @@ import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
 import MidtownGarageSale from '@/images/events/garage-sale/Midtown_Garage_Sale.jpg'
-import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
+import BeerisokBookSigning from '@/images/events/2022/04/beerisok-book-signing.png'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
@@ -67,23 +67,24 @@ export default function Events() {
     </Banner>
 
 
-    <Section id="rna-general-meeting">
-      <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={CampbellNow1} />
-      </div>
-
+    <Section id="german-beer-day">
       <div>
-        <h6>RNA General Meeting</h6>
+        <h6>German Beer Day / Oklahoma Beer Book Signing</h6>
         <p>
-          Tuesday, April 19<br />
-          7pm – ballroom of the Campbell Hotel
+          Saturday, April 23<br />
+          5pm – Renaissance Brewing Company
         </p>
         <p>
-          Subject: <a href="/news#rna-nco">Neighborhood Character Overlay</a>
+          Brian Welzbacher, author of Oklahoma Beer, will be signing books while we celebrate German Beer Day.
         </p>
-        <ul>
-          <li>Nathan Foster of the Tulsa Planning Office</li>
-        </ul>
+        <p>
+          <a href="https://www.beerisok.com/" target="_blank">beerisok.com</a>
+        </p>
+      </div>
+      <div className="; sm:flex-none sm:w-1/3 sm:justify-self-end">
+        <a href="https://www.beerisok.com/" target="_blank">
+          <ShadowImage src={BeerisokBookSigning} />
+        </a>
       </div>
     </Section>
 
