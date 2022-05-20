@@ -66,35 +66,11 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
-
-    <Section id="german-beer-day">
-      <div>
-        <h6>German Beer Day / Oklahoma Beer Book Signing</h6>
-        <p>
-          Saturday, April 23<br />
-          5pm – Renaissance Brewing Company
-        </p>
-        <p>
-          Brian Welzbacher, author of Oklahoma Beer, will be signing books while we celebrate German Beer Day.
-        </p>
-        <p>
-          <a href="https://www.beerisok.com/" target="_blank">beerisok.com</a>
-        </p>
-      </div>
-      <div className="; sm:flex-none sm:w-1/3 sm:justify-self-end">
-        <a href="https://www.beerisok.com/" target="_blank">
-          <ShadowImage src={BeerisokBookSigning} />
-        </a>
-      </div>
-    </Section>
-
     <Section id="neighborhood-yard-sale">
       <div>
         <h6>Midtown Garage Sale Extravaganza</h6>
         <p>The Renaissance Neighborhood Association has partnered with Florence Park and Lewiston Gardens to hold a 3-neighborhood-wide garage sale on May 20 - 22.</p>
         <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. The Neighborhood Associations will advertise in the Tulsa World, Craigslist, Facebook Marketplace and other online sites. The associations will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location.</p>
-        <p>Sign up to participate here: <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdKIEris71GFHSG-naYmskVEFMASQ3uROic2xH9P91iWYtMTQ/viewform">https://docs.google.com/forms/d/e/1FAIpQLSdKIEris71GFHSG-naYmskVEFMASQ3uROic2xH9P91iWYtMTQ/viewform</a></p>
-        <p>Once you sign up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
       </div>
       <div className="; sm:flex-none sm:w-1/3">
         <a href="/sale">

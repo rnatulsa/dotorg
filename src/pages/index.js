@@ -41,12 +41,6 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
-    <UpcomingEvent title="Saturday, April 23" href="/events#german-beer-day">
-        <p>
-          <b>German Beer Day / Oklahoma Beer Book Signing</b><br />
-          Renaissance Brewing Company - 5pm
-        </p>
-      </UpcomingEvent>
       <UpcomingEvent title="May 20-22"  href="/events#neighborhood-yard-sale">
         <p>
           <b>Neighborhood Yard Sale</b><br />

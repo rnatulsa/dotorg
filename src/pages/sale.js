@@ -15,17 +15,13 @@ export default function Sale() {
         The neighborhoods of <a href="https://rnatulsa.org/">Renaissance</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FlorenceParkTulsa">Florence Park</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LewistonGardens">Lewiston Gardens</a> are holding a neighborhood-wide garage sale on May 20-22. This includes over 50 separate sales in the area of S. Harvard to Lewis Ave, and 11th to 21st St.
       </p>
 
-      <p className="; my-4 italic">
-        Check this page on the morning of Friday May 20 for a live map of the sale locations.
+      <p className="; my-4">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/d/u/1/edit?mid=17FwOVKPDKI48YXSrBFq9Rgw3H5iNKzyy&amp;usp=sharing" className="underline text-blue-600">
+          Open Bigger Map
+        </a>
       </p>
 
-      {/* <iframe
-        style={{border: '1px solid black', width: '100%', height:'50vw'}}
-        frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-95.96467494964601%2C36.132883744079486%2C-95.93399047851564%2C36.14821958118677&amp;layer=mapnik&amp;marker=36.1405433730337%2C-95.94933271408081"
-      />
-      <div><small><a target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/?mlat=36.1405&amp;mlon=-95.9493#map=16/36.1406/-95.9493">View Larger Map</a></small></div> */}
-
+      <iframe src="https://www.google.com/maps/d/embed?mid=17FwOVKPDKI48YXSrBFq9Rgw3H5iNKzyy&amp;ehbc=2E312F&amp;z=16" style={{border: '1px solid black', width: '100%', height:'50vw'}}></iframe>
     </div>
   </>
 }
