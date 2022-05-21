@@ -71,6 +71,7 @@ export default function Events() {
         <h6>Midtown Garage Sale Extravaganza</h6>
         <p>The Renaissance Neighborhood Association has partnered with Florence Park and Lewiston Gardens to hold a 3-neighborhood-wide garage sale on May 20 - 22.</p>
         <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. The Neighborhood Associations will advertise in the Tulsa World, Craigslist, Facebook Marketplace and other online sites. The associations will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location.</p>
+        <p><a href="/sale" className="underline text-blue-600">Sale page with Map</a></p>
       </div>
       <div className="; sm:flex-none sm:w-1/3">
         <a href="/sale">
@@ -101,7 +102,7 @@ export default function Events() {
           <h2 className="; ">Play <a href="https://rnatulsa-scavenger-hunt-2020.netlify.com/RNA-Scavenger-Hunt.pdf">Offline</a></h2>
           <p>Download and then print a copy of the score sheet and carry this it with you as you explore. Check off each item as you find it. If you choose, you can take a photo of yourself with each item and post your photos on our FB page to show off your skills!</p>
         </div>
-        <div className="; flext-none">
+        <div className="; flex-none">
           <a className={styles.button} href="https://rnatulsa-scavenger-hunt-2020.netlify.com/RNA-Scavenger-Hunt.pdf">Download Score Sheet</a>
         </div>
       </div>
