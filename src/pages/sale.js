@@ -16,12 +16,12 @@ export default function Sale() {
       </p>
 
       <p className="; my-4">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/d/viewer?mid=1aRHRWOtnelJej6cnR0zLDaa4c04srx2Z&amp;z=16" className="underline text-blue-600">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/d/viewer?mid=1zxriYFHbVYXiiBxXxJSyTPjGS20IGCeE&amp;z=16" className="underline text-blue-600">
           Open Bigger Map
         </a>
       </p>
 
-      <iframe src="https://www.google.com/maps/d/embed?mid=1aRHRWOtnelJej6cnR0zLDaa4c04srx2Z&amp;ehbc=2E312F&amp;z=16" style={{border: '1px solid black', width: '100%', height:'50vw'}}></iframe>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1zxriYFHbVYXiiBxXxJSyTPjGS20IGCeE&amp;ehbc=2E312F&amp;z=16" style={{border: '1px solid black', width: '100%', height:'50vw'}}></iframe>
     </div>
   </>
 }
