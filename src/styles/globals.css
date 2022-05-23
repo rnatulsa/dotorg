@@ -9,3 +9,8 @@ html, body, #__next {
 
   min-width: 300px;
 }
+
+p a {
+  @apply text-blue-600;
+  @apply underline;
+}

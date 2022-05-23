@@ -66,20 +66,6 @@ export default function Events() {
       <p>Come Join the Fun</p>
     </Banner>
 
-    <Section id="neighborhood-yard-sale">
-      <div>
-        <h6>Midtown Garage Sale Extravaganza</h6>
-        <p>The Renaissance Neighborhood Association has partnered with Florence Park and Lewiston Gardens to hold a 3-neighborhood-wide garage sale on May 20 - 22.</p>
-        <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. The Neighborhood Associations will advertise in the Tulsa World, Craigslist, Facebook Marketplace and other online sites. The associations will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location.</p>
-        <p><a href="/sale" className="underline text-blue-600">Sale page with Map</a></p>
-      </div>
-      <div className="; sm:flex-none sm:w-1/3">
-        <a href="/sale">
-          <ShadowImage src={MidtownGarageSale} alt={'Midtown Garage Sale - Hosted by Renaissance, Florence Park & Lewiston Gardens'} />
-        </a>
-      </div>
-    </Section>
-
     <Section id="second-friday">
       <div>
         <h6>“Second Friday” Meet-n-Greet</h6>
