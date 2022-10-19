@@ -1,0 +1,26 @@
+.bylaws {
+  @apply mx-auto;
+  @apply container;
+  @apply max-w-2xl;
+  @apply p-4;
+}
+
+.bylaws h1 ,
+.bylaws h2 ,
+.bylaws h3 ,
+.bylaws p {
+  @apply my-4;
+}
+
+.bylaws h1 ,
+.bylaws h2 ,
+.bylaws h3 {
+  @apply font-bold;
+}
+
+.bylaws h1 {
+  @apply text-xl
+}
+.bylaws h2 {
+  @apply text-lg
+}

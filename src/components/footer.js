@@ -1,5 +1,6 @@
 import EmailListForm from '@/components/email-list-form'
 import { YEAR } from '@/lib/utils'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -20,6 +21,14 @@ export default function Footer() {
           <p className="; my-4">
             Renaissance Neighborhood Association (RNA) is a group of residents who volunteer their time to promote a
             united community by organizing events and by sharing information that affects our neighborhood.
+          </p>
+
+          <p className="; my-4">
+            <Link href="/bylaws" passHref>
+              <a className="; text-wixColor10 underline">
+                Neighborhood Association Bylaws
+              </a>
+            </Link>
           </p>
         </div>
 
