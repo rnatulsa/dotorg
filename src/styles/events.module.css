@@ -63,6 +63,11 @@
   margin-left: 1.5em;
 }
 
+.event ol {
+  @apply list-decimal;
+  margin-left: 1.5em;
+}
+
 .event_title {
   @apply font-serif;
   @apply font-bold;
