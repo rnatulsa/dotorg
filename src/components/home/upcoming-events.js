@@ -25,7 +25,7 @@ UpcomingEventsSection.propTypes = {
 export const UpcomingEvents = tw.div`sm:(flex justify-center justify-items-center)`
 
 export const UpcomingEvent = ({href, title, children, ...props}) => (
-  <div tw="flex flex-col my-8 px-8 border-wixColor31 sm:border-l first:border-0" css={css`
+  <div tw="flex flex-col my-8 px-8 border-wixColor31 max-w-sm sm:border-l first:border-0" css={css`
     p {
       ${tw`flex-1 my-4`}
     }

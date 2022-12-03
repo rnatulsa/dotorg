@@ -44,3 +44,32 @@
   @apply p-2;
   @apply inline-block;
 }
+
+.event h2 {
+  @apply my-2;
+  font-size: 20px;
+}
+.event h3 {
+  @apply my-2;
+  font-size: 18px;
+}
+.event h4 {
+  @apply my-2;
+  font-size: 16px;
+}
+
+.event ul {
+  @apply list-disc;
+  margin-left: 1.5em;
+}
+
+.event_title {
+  @apply font-serif;
+  @apply font-bold;
+  @apply uppercase;
+  @apply text-wixColor25;
+  @apply mb-6;
+
+  font-size: 18px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+}

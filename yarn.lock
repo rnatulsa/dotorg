@@ -909,6 +909,19 @@
   resolved "https://registry.yarnpkg.com/@bugsnag/safe-json-stringify/-/safe-json-stringify-6.0.0.tgz#22abdcd83e008c369902976730c34c150148a758"
   integrity sha512-htzFO1Zc57S8kgdRK9mLcPVTW1BY2ijfH7Dk2CeZmspTWKdKqSo1iwmqrq2WtRjFlo8aRZYgLX0wFrDXF/9DLA==
 
+"@contentful/rich-text-html-renderer@^16.0.2":
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-html-renderer/-/rich-text-html-renderer-16.0.2.tgz#18bd2a2a9ee2f68192384b4f9af97f58270bd336"
+  integrity sha512-0flmxVixlNk5PMiHXAlABUJ2uURsWxOjbC6ZHhqpEVHU03kHMoIKfDdo6CRZc0S0rMWMO3c14Ei91E97T06T8w==
+  dependencies:
+    "@contentful/rich-text-types" "^16.0.2"
+    escape-html "^1.0.3"
+
+"@contentful/rich-text-types@^16.0.2":
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.0.2.tgz#779bc76b5159152b3a9e908e6a04cb9342faa9b1"
+  integrity sha512-ovbmCKQjlyGek4NuABoqDesC3FBV3e5jPMMdtT2mpOy9ia31MKO0NSFMRGZu7Q+veZzmDMja8S1i/XeFCUT9Pw==
+
 "@dabh/diagnostics@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@dabh/diagnostics/-/diagnostics-2.0.2.tgz#290d08f7b381b8f94607dc8f471a12c675f9db31"
@@ -4237,7 +4250,7 @@ escape-goat@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
   integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=

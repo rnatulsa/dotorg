@@ -14,7 +14,7 @@ start:
 	yarn start
 
 clean:
-	rm -rf .next node_modules out yarn-error.log
+	rm -rf .next out yarn-error.log data/contentful/*.json
 
 server:
 	python3 -m http.server --directory out/

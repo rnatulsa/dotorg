@@ -23,7 +23,30 @@ import RNAshirt1 from '@/images/wix/home-page/news/RNAshirt1.jpg'
 import Alert from '@/images/wix/home-page/news/Alert.jpg'
 import NewRNAsign1 from '@/images/wix/home-page/news/NewRNAsign1.jpg'
 
-export default function Home() {
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import { fetchEvents } from '@/lib/contentful/entries'
+
+export async function getStaticProps() {
+  return {
+    props: {
+      events: await fetchEvents({order: 'fields.date'})
+    }
+  }
+}
+
+function UpcomingEventContent({event}) {
+  const field = event.fields.content
+  const __html = documentToHtmlString({
+    ...field,
+    content: field.content.slice(0, 1)
+  })
+
+return <>
+    <div dangerouslySetInnerHTML={{__html}} />
+  </>
+}
+
+export default function Home({events}) {
   return <>
     <Title>Home</Title>
 
@@ -41,6 +64,11 @@ export default function Home() {
     </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
+      {events.map((event, i) => (
+        <UpcomingEvent key={i} title={event.fields.title}  href={`/events#${event.sys.id}`}>
+          <UpcomingEventContent event={event} />
+        </UpcomingEvent>
+      ))}
       <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
         <p>
           <b>“Second Friday” Meet-n-Greet</b><br />

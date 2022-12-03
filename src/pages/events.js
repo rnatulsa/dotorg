@@ -9,12 +9,14 @@ import Gallery from '@/components/gallery'
 import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
-import MidtownGarageSale from '@/images/events/garage-sale/Midtown_Garage_Sale.jpg'
-import BeerisokBookSigning from '@/images/events/2022/04/beerisok-book-signing.png'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
 import styles from '@/styles/events.module.css'
+import sectionStyles from '@/styles/section.module.css'
+
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import { fetchEvents } from '@/lib/contentful/entries'
 
 const CHILIFEST_IMAGES = [
   require('@/images/wix/ChiliFest/BannerOnTable.jpg'),
@@ -56,8 +58,28 @@ const PARKFEST_IMAGES = [
   require('@/images/wix/Parkfest2015/ParkfestPlannerJanelle.jpg'),
 ]
 
-export default function Events() {
+export async function getStaticProps() {
+  return {
+    props: {
+      events: await fetchEvents({order: 'fields.date'})
+    }
+  }
+}
 
+function Event({event}) {
+  const __html = documentToHtmlString(event.fields.content)
+
+  return <>
+    <Section id={event.sys.id}>
+      <div className={styles.event}>
+        <h2 className={styles.event_title}>{event.fields.title}</h2>
+        <div dangerouslySetInnerHTML={{__html}} />
+      </div>
+    </Section>
+  </>
+}
+
+export default function Events({events}) {
   return <>
     <Title>Events</Title>
 
@@ -65,6 +87,8 @@ export default function Events() {
       <h2>Events</h2>
       <p>Come Join the Fun</p>
     </Banner>
+
+    {events.map((event, i) => <Event key={i} event={event} />)}
 
     <Section id="second-friday">
       <div>

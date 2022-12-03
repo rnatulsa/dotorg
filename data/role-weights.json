@@ -1,0 +1,8 @@
+{
+  "President": 0,
+  "Vice President": 1,
+  "Treasurer": 2,
+  "Secretary": 3,
+  "Historian": 4,
+  "Member At-Large": 5
+}
