@@ -14,7 +14,7 @@ import EntrySign from '@/images/wix/EntrySign.jpg'
 
 import { fetchBoardMembers } from '@/lib/contentful/entries'
 
-export default function AboutUs({boardMembers}) {
+export default function AboutUs({ boardMembers }) {
   return <>
     <Title>About Us</Title>
 
@@ -53,6 +53,13 @@ export default function AboutUs({boardMembers}) {
     </Section>
 
     <Section>
+      <div>
+        <h6>Land Acknowledgement</h6>
+        <p>The Renaissance Neighborhood of Tulsa recognizes that our community is built on the original land assigned to two Native Muscogee Creek Citizens, <Link href="https://tulsarenaissancehistory.blogspot.com/2019/08/emma-adeline-addie-perryman.html">Emma Adeline "Addie" Perryman</Link> and <Link href="https://tulsarenaissancehistory.blogspot.com/2022/07/mary-jane-perryman.html">Mary Jane Perryman</Link>. The Perrymans were prominent Tulsans, often called the “First Family of Tulsa.” To learn more about these Creek women and other neighborhood history, visit the <Link href="https://tulsarenaissancehistory.blogspot.com/">RNA History Project</Link>.</p>
+      </div>
+    </Section>
+
+    <Section className="; bg-wixColor26">
       <div>
         <h6>A Little History Lesson</h6>
         <p>The Renaissance Neighborhood Association was established in 1994. An early accomplishment was successfully preventing the demolition of the Casa Loma Building at 11th and Columbia Ave. This building is now known as the historic <a href="https://www.thecampbellhotel.com/history">Max Campbell Building</a> and is listed on the National Register of Historic Places. It has been completely renovated and is open for business today.</p>

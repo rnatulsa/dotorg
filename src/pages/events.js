@@ -1,4 +1,5 @@
 import React from 'react'
+import { DateTime } from 'luxon'
 
 import Title from '@/components/title'
 import Banner from '@/components/banner'
@@ -13,10 +14,11 @@ import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
 import styles from '@/styles/events.module.css'
-import sectionStyles from '@/styles/section.module.css'
 
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { fetchEvents } from '@/lib/contentful/entries'
+import { renderComponents } from '@/lib/contentful/render'
+import { formatDateTime } from '@/lib/utils'
+
 
 const CHILIFEST_IMAGES = [
   require('@/images/wix/ChiliFest/BannerOnTable.jpg'),
@@ -61,25 +63,33 @@ const PARKFEST_IMAGES = [
 export async function getStaticProps() {
   return {
     props: {
-      events: await fetchEvents({order: 'fields.date'})
+      events: await fetchEvents({ order: 'fields.date' })
     }
   }
 }
 
-function Event({event}) {
-  const __html = documentToHtmlString(event.fields.content)
+function Event({ event }) {
+  const { title, date, location, content } = event.fields
+
+  const formatDate = (date) => {
+    return formatDateTime(date, { weekday: true })
+  }
 
   return <>
-    <Section id={event.sys.id}>
+    <Section id={event.fields.slug}>
       <div className={styles.event}>
-        <h2 className={styles.event_title}>{event.fields.title}</h2>
-        <div dangerouslySetInnerHTML={{__html}} />
+        <h2 className={styles.event_title}>{title}</h2>
+
+        {date && <div><b>{formatDate(date)}</b></div>}
+        {location && <div><b>{location}</b></div>}
+
+        {renderComponents(content)}
       </div>
     </Section>
   </>
 }
 
-export default function Events({events}) {
+export default function Events({ events }) {
   return <>
     <Title>Events</Title>
 

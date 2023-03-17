@@ -1,10 +1,11 @@
 import React from 'react'
 import Title from '@/components/title'
+import { DateTime } from 'luxon'
 import { css } from 'twin.macro'
 
 import { Gallery, GalleryText, GalleryButtons, GalleryButton } from '@/components/gallery'
-import { UpcomingEventsSection, UpcomingEvent} from '@/components/home/upcoming-events'
-import { WhatsNewsSection, WhatsNewsItem} from '@/components/home/whats-news'
+import { UpcomingEventsSection, UpcomingEvent } from '@/components/home/upcoming-events'
+import { WhatsNewsSection, WhatsNewsItem } from '@/components/home/whats-news'
 
 import RNAalbum7 from '@/images/wix/home-page/gallery/RNAalbum7.jpg';
 const IMAGES = [
@@ -23,30 +24,32 @@ import RNAshirt1 from '@/images/wix/home-page/news/RNAshirt1.jpg'
 import Alert from '@/images/wix/home-page/news/Alert.jpg'
 import NewRNAsign1 from '@/images/wix/home-page/news/NewRNAsign1.jpg'
 
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import { renderComponents } from '@/lib/contentful/render'
 import { fetchEvents } from '@/lib/contentful/entries'
+import { writeRedirects } from '@/lib/contentful/netlify-redirects'
+import { formatDateTime } from '@/lib/utils'
 
 export async function getStaticProps() {
+  await writeRedirects()
+
   return {
     props: {
-      events: await fetchEvents({order: 'fields.date'})
+      events: await fetchEvents({ order: 'fields.date' })
     }
   }
 }
 
-function UpcomingEventContent({event}) {
-  const field = event.fields.content
-  const __html = documentToHtmlString({
-    ...field,
-    content: field.content.slice(0, 1)
-  })
+function UpcomingEventContent({ event }) {
+  const { title, date, location, content } = event.fields
 
-return <>
-    <div dangerouslySetInnerHTML={{__html}} />
-  </>
+  return <div>
+    {date && <p><b>{formatDateTime(date, { size: 'short', year: false, weekday: true })}</b></p>}
+    {location && <p>{location}</p>}
+    {content && renderComponents({ ...content, content: content.content.slice(0, 1) })}
+  </div>
 }
 
-export default function Home({events}) {
+export default function Home({ events }) {
   return <>
     <Title>Home</Title>
 
@@ -65,15 +68,16 @@ export default function Home({events}) {
 
     <UpcomingEventsSection title="Upcoming Events">
       {events.map((event, i) => (
-        <UpcomingEvent key={i} title={event.fields.title}  href={`/events#${event.sys.id}`}>
+        <UpcomingEvent key={i} title={event.fields.title} href={`/events#${event.fields.slug}`}>
           <UpcomingEventContent event={event} />
         </UpcomingEvent>
       ))}
-      <UpcomingEvent title="Every 2nd Friday"  href="/events#second-friday">
-        <p>
-          <b>“Second Friday” Meet-n-Greet</b><br />
-          Renaissance Brewery
-        </p>
+      <UpcomingEvent title="“Second Friday” Meet-n-Greet" href="/events#second-friday">
+        <div>
+          <p><b>Every 2nd Friday</b></p>
+          <p>Renaissance Brewery at 12th & Lewis</p>
+          <p>A social event for residents of our neighborhood.</p>
+        </div>
       </UpcomingEvent>
     </UpcomingEventsSection>
 
