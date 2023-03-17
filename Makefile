@@ -8,7 +8,8 @@ dev:
 build:
 	yarn build
 	[ ! -f out/robots.txt.$$CONTEXT ] || cp out/robots.txt.$$CONTEXT out/robots.txt
-	rm -f out/robots.txt.*
+	[ ! -f out/_redirects.* ] || cat out/_redirects.* >> out/_redirects
+	rm -f out/robots.txt.* out/_redirects.*
 
 start:
 	yarn start

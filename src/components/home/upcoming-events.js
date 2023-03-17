@@ -2,7 +2,7 @@ import tw, { css } from 'twin.macro'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 
-export const UpcomingEventsSection = ({title, children, ...props}) => (
+export const UpcomingEventsSection = ({ title, children, ...props }) => (
   <div tw="text-center all-child:my-8" {...props}>
     <h2 tw="uppercase font-bold flex-none w-full text-wixColor24" css={css`
       font-size: 35px;
@@ -24,10 +24,10 @@ UpcomingEventsSection.propTypes = {
 
 export const UpcomingEvents = tw.div`sm:(flex justify-center justify-items-center)`
 
-export const UpcomingEvent = ({href, title, children, ...props}) => (
-  <div tw="flex flex-col my-8 px-8 border-wixColor31 max-w-sm sm:border-l first:border-0" css={css`
-    p {
-      ${tw`flex-1 my-4`}
+export const UpcomingEvent = ({ href, title, children, ...props }) => (
+  <div tw="my-8 px-8 border-wixColor31 sm:border-l first:border-0 mx-auto sm:mx-0" css={css`
+    & > * {
+      ${tw`my-4`}
     }
   `} {...props}>
     <h5 tw="font-bold leading-none text-wixColor24" css={css`

@@ -35,3 +35,5 @@ yarn-error.log*
 
 /.tmp
 /.envrc
+
+/public/_redirects.contentful

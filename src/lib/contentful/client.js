@@ -8,7 +8,8 @@ const cache = {}
 
 export const client = createClient({
   space: config.space_id,
-  accessToken: config.deploy_access_token
+  accessToken: config.access_token,
+  host: config.host
 })
 
 client.getEntriesCachedItems = async function () {

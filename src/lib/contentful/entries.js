@@ -10,6 +10,14 @@ export async function fetchEvents(query = {}) {
   return items
 }
 
+export async function fetchRedirects() {
+  const items = await client.getEntriesCachedItems({
+    content_type: 'redirect'
+  })
+
+  return items
+}
+
 export async function fetchBusinesses() {
   const items = await client.getEntriesCachedItems({
     content_type: 'business'
