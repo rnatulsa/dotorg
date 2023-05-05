@@ -1,5 +1,4 @@
 import React from 'react'
-import { DateTime } from 'luxon'
 
 import Title from '@/components/title'
 import Banner from '@/components/banner'
@@ -10,6 +9,7 @@ import Gallery from '@/components/gallery'
 import EventBanner3 from '@/images/wix/banners/EventBanner-3.jpg'
 import BreweryTender from '@/images/wix/events/BreweryTender.jpg'
 import YardSale from '@/images/wix/8ddcb11aa53c45ce954624a4aea25994.jpg'
+import CampbellNow1 from '@/images/wix/CampbellNow1.jpg'
 
 import First from '@/images/wix/events/scavenger-hunt/first.png'
 import Second from '@/images/wix/events/scavenger-hunt/second.png'
@@ -72,7 +72,7 @@ function Event({ event }) {
   const { title, date, location, content } = event.fields
 
   const formatDate = (date) => {
-    return formatDateTime(date, { weekday: true })
+    return formatDateTime(date, { weekday: true }).replace(' at 12:00 AM', '')
   }
 
   return <>
@@ -99,6 +99,17 @@ export default function Events({ events }) {
     </Banner>
 
     {events.map((event, i) => <Event key={i} event={event} />)}
+
+    <Section id="happy-hour">
+      <div>
+        <h6>RNA Happy Hour</h6>
+        <p>You asked for it - you got it. The return of the RNA Happy Hour at the Campbell Hotel Lounge. Drink specials! Meet your neighbors! Gripe at your Board members (attendance of Board members not guaranteed.) Informal and relaxed, practically to the point of unconsciousness.</p>
+        <p>Repeats the last Friday of every month, 5:30 to 7:30 pm</p>
+      </div>
+      <div className="; sm:flex-none sm:w-1/3">
+        <ShadowImage src={CampbellNow1} />
+      </div>
+    </Section>
 
     <Section id="second-friday">
       <div>
@@ -152,43 +163,5 @@ export default function Events({ events }) {
         </div>
       </div>
     </div>
-
-    <Section id="neighborhood-yard-sale">
-      <div className="; sm:flex-none sm:w-1/3">
-        <ShadowImage src={YardSale} />
-      </div>
-
-      <div>
-        <h6>Neighborhood Yard Sale</h6>
-        <p>Look for the RNA Yard Sale in summer 2022!</p>
-        <p>There is no cost for you to participate! Just gather your treasures and display them in your yard or garage. RNA will advertise in the Tulsa World, Craigslist, FB Marketplace and other online sites. RNA will also put out several big signs around key locations of our neighborhood but you will need to put out signs to direct traffic to your specific location. There will be a sign-up sheet and by signing-up, your address will be placed on the sale map that will be accessible to potential buyers.</p>
-      </div>
-    </Section>
-
-    <Section>
-      <div>
-        <h6>Chili Challenge Over the Years</h6>
-        <p>The annual Chili Challenge has been a fall tradition since 2009. Residents bring their best chili recipes to compete in three categories: Most Classic, Most Unique and Most Spicy. Watch the EVENTS page for this year's challenge date!</p>
-        <Gallery size="contain" images={CHILIFEST_IMAGES} style={{
-          height: 'calc((100vw - 0px) * 0.5625)',
-          maxHeight: '90vh',
-          minHeight: '20vh',
-          maxWidth: 'calc((90vh - 0px) / 0.5625)'
-        }} />
-      </div>
-    </Section>
-
-    <Section>
-      <div>
-        <h6>Parkfest 2015</h6>
-        <p>The annual Parkfest was a spring staple for many years. In 2015, it was held at Gary Park at 12th and Gary Place. Janelle Cordray planned a really fun event including games like "Guess How Many Seeds in the Jar" and a "Best Side Dish" contest. The winners won prizes that were donated by Reasor's Grocery Store and other businesses. Hot dogs and soft drinks were provided by RNA. The Tulsa Fire Department came out to let everyone play in their fire truck. There was even a bouncy-house for the kids. A fun time was had by all!</p>
-        <Gallery size="contain" images={PARKFEST_IMAGES} style={{
-          height: 'calc((100vw - 0px) * 0.5625)',
-          maxHeight: '90vh',
-          minHeight: '20vh',
-          maxWidth: 'calc((90vh - 0px) / 0.5625)'
-        }} />
-      </div>
-    </Section>
   </>
 }

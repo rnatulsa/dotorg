@@ -22,7 +22,7 @@ UpcomingEventsSection.propTypes = {
   children: PropTypes.node
 }
 
-export const UpcomingEvents = tw.div`sm:(flex justify-center justify-items-center)`
+export const UpcomingEvents = tw.div`md:(flex justify-center justify-items-center)`
 
 export const UpcomingEvent = ({ href, title, children, ...props }) => (
   <div tw="my-8 px-8 border-wixColor31 sm:border-l first:border-0 mx-auto sm:mx-0" css={css`

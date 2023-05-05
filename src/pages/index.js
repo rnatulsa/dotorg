@@ -34,7 +34,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      events: await fetchEvents({ order: 'fields.date' })
+      events: (await fetchEvents({ order: 'fields.date' })).slice(0, 2)
     }
   }
 }
@@ -43,7 +43,7 @@ function UpcomingEventContent({ event }) {
   const { title, date, location, content } = event.fields
 
   return <div>
-    {date && <p><b>{formatDateTime(date, { size: 'short', year: false, weekday: true })}</b></p>}
+    {date && <p><b>{formatDateTime(date, { size: 'short', year: false, weekday: true }).replace(' at 12am', '')}</b></p>}
     {location && <p>{location}</p>}
     {content && renderComponents({ ...content, content: content.content.slice(0, 1) })}
   </div>
@@ -72,6 +72,13 @@ export default function Home({ events }) {
           <UpcomingEventContent event={event} />
         </UpcomingEvent>
       ))}
+      <UpcomingEvent title="RNA Happy Hour" href="/events#happy-hour">
+        <div>
+          <p><b>Every Last Friday 5:30–7:30</b></p>
+          <p>Campbell Hotel Lounge at 11th & Columbia</p>
+          <p>Informal and relaxed, practically to the point of unconsciousness.</p>
+        </div>
+      </UpcomingEvent>
       <UpcomingEvent title="“Second Friday” Meet-n-Greet" href="/events#second-friday">
         <div>
           <p><b>Every 2nd Friday</b></p>
