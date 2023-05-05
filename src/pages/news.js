@@ -23,10 +23,8 @@ export default function News() {
 
     <Section id="rna-nco">
       <div>
-        <h6>RNA General Meeting and Neighborhood Character Overlay Discussion</h6>
-        <p>Our next general meeting is Tuesday, April 19 at 7 pm in the ballroom of the Campbell Hotel at 11th and Columbia. Nathan Foster of the Tulsa Planning Office will be explaining the Neighborhood Character Overlay zoning which is being proposed for the Renaissance Neighborhood.</p>
-        <p><a href="/files/renaissance-zca-18-nco-draft.pdf" target="_blank" rel="noopener noreferrer">Neighborhood Character Overlay (draft)</a> – This is the draft of the Neighborhood Character Overlay zoning that is being proposed for our Renaissance Neighborhood. This will be a long process in which you will have multiple opportunities to ask questions, make suggestions, support or reject this zoning. For more details, please see the document called “NCO Q &amp; A” and/or attend the April 19 general meeting.</p>
-        <p><a href="/files/renaissance-nco-qa.pdf" target="_blank" rel="noopener noreferrer">Neighborhood Character Overlay Q&amp;A</a> – This Q &amp; A was prepared to help answer your questions about the Neighborhood Character Overlay zoning which is being proposed for the Renaissance Neighborhood. The process will take many months and you will have multiple opportunities to ask questions, make suggestions, support or reject this zoning. Please make plans to attend the April 19 to learn more about this zoning.</p>
+        <h6>Renaissance Neighborhood Association Bylaws Update</h6>
+        <p>The proposed amendments to the Renaissance Neighborhood Association Bylaws passed by a vote of 35 to 1 at Tuesday night's general meeting. Thanks to all who showed up and voted on this. These bylaws will be here in the files section for your reference. The changes to dues (a $5 increase in each membership category) and to the terms of Board officers (from 1 year to 2 years) will not go into effect until 2024. Big thanks to Board members Tamra Moore (who chaired this committee), Arena de Foddis and Mark Ogan, who did the work on updating these bylaws in response to resident requests."</p>
       </div>
     </Section>
 
