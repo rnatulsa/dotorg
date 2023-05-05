@@ -13,7 +13,7 @@ const PayPalSingle = () => (
     <input type="hidden" name="lc" value="US" />
     <input type="hidden" name="item_name" value="RN Single Dues" />
     <input type="hidden" name="item_number" value="Dues-1" />
-    <input type="hidden" name="amount" value="10.00" />
+    <input type="hidden" name="amount" value="15.00" />
     <input type="hidden" name="currency_code" value="USD" />
     <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
     <input type="hidden" name="button_subtype" value="services" />
@@ -31,7 +31,7 @@ const PayPalCouples = () => (
     <input type="hidden" name="lc" value="US" />
     <input type="hidden" name="item_name" value="RNA Couples Dues" />
     <input type="hidden" name="item_number" value="Dues-2" />
-    <input type="hidden" name="amount" value="15.00" />
+    <input type="hidden" name="amount" value="20.00" />
     <input type="hidden" name="currency_code" value="USD" />
     <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
     <input type="hidden" name="button_subtype" value="services" />
@@ -49,7 +49,7 @@ const PayPalBusiness = () => (
     <input type="hidden" name="lc" value="US" />
     <input type="hidden" name="item_name" value="RNA Business Dues" />
     <input type="hidden" name="item_number" value="Dues-B" />
-    <input type="hidden" name="amount" value="25.00" />
+    <input type="hidden" name="amount" value="30.00" />
     <input type="hidden" name="currency_code" value="USD" />
     <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
     <input type="hidden" name="button_subtype" value="services" />
@@ -80,9 +80,9 @@ export default function Dues() {
       <div className="; flex-1">
         <h5 className="; text-center">Rates</h5>
         <ul>
-          <li><span>Couples Rate</span> $15/year for two adults (two votes) in same residence</li>
-          <li><span>Single Rate</span> $10/year for one adult (one vote) at a residence</li>
-          <li><span>Business Rate</span> $25/year for one business (one vote) located within neighborhood</li>
+          <li><span>Couples Rate</span> $20/year for two adults (two votes) in same residence</li>
+          <li><span>Single Rate</span> $15/year for one adult (one vote) at a residence</li>
+          <li><span>Business Rate</span> $30/year for one business (one vote) located within neighborhood</li>
         </ul>
         <p className="; mx-auto" style={{ width: '79px' }}>
           <svg preserveAspectRatio="xMidYMid meet" data-bbox="34.501 48 130.997 104.001" viewBox="34.501 48 130.997 104.001" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" style={{ width: '79px', height: '62px' }}>
