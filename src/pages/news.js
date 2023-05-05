@@ -24,7 +24,8 @@ export default function News() {
     <Section id="rna-nco">
       <div>
         <h6>Renaissance Neighborhood Association Bylaws Update</h6>
-        <p>The proposed amendments to the Renaissance Neighborhood Association Bylaws passed by a vote of 35 to 1 at Tuesday night's general meeting. Thanks to all who showed up and voted on this. These bylaws will be here in the files section for your reference. The changes to dues (a $5 increase in each membership category) and to the terms of Board officers (from 1 year to 2 years) will not go into effect until 2024. Big thanks to Board members Tamra Moore (who chaired this committee), Arena de Foddis and Mark Ogan, who did the work on updating these bylaws in response to resident requests."</p>
+        <p>The proposed amendments to the Renaissance Neighborhood Association Bylaws passed by a vote of 35 to 1 at Tuesday night's general meeting. Thanks to all who showed up and voted on this. The changes to dues (a $5 increase in each membership category) and to the terms of Board officers (from 1 year to 2 years) will not go into effect until 2024. Big thanks to Board members Tamra Moore (who chaired this committee), Arena de Foddis and Mark Ogan, who did the work on updating these bylaws in response to resident requests.</p>
+        <p>The complete bylaws can be found on <Link href={'/bylaws'}>this page</Link> or <a href="/files/rna-bylaws-20230418.pdf" target="_blank">downloaded as a PDF</a>.</p>
       </div>
     </Section>
 
