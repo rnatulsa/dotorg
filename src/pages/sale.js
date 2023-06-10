@@ -42,10 +42,6 @@ export default function Sale() {
     <Title>Midtown Yard Sale Extravaganza</Title>
 
     <div className="; container mx-auto p-8 text-center space-y-4">
-      <p className="; my-8 text-xl font-bold text-red-500">
-        ⛈ Due to rain, all sales are delayed. ⛈<br />Please check back here at 10am for updates.
-      </p>
-
       <h1 className="; text-5xl font-bold">Midtown Yard&nbsp;Sale Extravaganza</h1>
 
       <div className="; text-left space-y-4 lg:text-center">
