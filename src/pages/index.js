@@ -6,7 +6,7 @@ import { Gallery, GalleryText, GalleryButtons, GalleryButton } from '@/component
 import { UpcomingEventsSection, UpcomingEvent } from '@/components/home/upcoming-events'
 import { WhatsNewsSection, WhatsNewsItem } from '@/components/home/whats-news'
 
-import MidtownGarageSale from '@/images/events/garage-sale/midtown-garage-sale-2023.jpg'
+import MidtownYardSale from '@/images/events/yard-sale/2023/midtown-yard-sale-2023.jpg'
 import RNAalbum7 from '@/images/wix/home-page/gallery/RNAalbum7.jpg';
 const IMAGES = [
   require('@/images/wix/home-page/gallery/HouseSpring.jpg'),
@@ -67,7 +67,7 @@ export default function Home({ events }) {
     </Gallery> */}
     <div>
       <a href="/sale" className="; block">
-        <img className="; mx-auto" src={MidtownGarageSale} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" />
+        <img className="; mx-auto" src={MidtownYardSale} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" />
       </a>
       <p className="; text-center mt-6 mb-24">Visit the <a href="/sale">sale page</a> for maps and more information.</p>
     </div>

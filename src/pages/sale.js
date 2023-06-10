@@ -1,26 +1,16 @@
 import React from 'react'
 import Title from '@/components/title'
-import MidtownGarageSale from '@/images/events/garage-sale/midtown-garage-sale-2023.jpg'
-import GarageSaleMap from '@/images/events/garage-sale/2023/midtown-garage-sale-2023-friday-map.png'
-import GarageSaleAddresses from '@/images/events/garage-sale/2023/midtown-garage-sale-2023-friday-addresses.png'
+import MidtownYardSale from '@/images/events/yard-sale/2023/midtown-yard-sale-2023.jpg'
+import YardSaleMap from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-saturday-map.png'
+import YardSaleAddresses from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-saturday-addresses.png'
 import { DateTime } from 'luxon'
 
 const DAYS = {
-  '2023-06-09': {
-    label: 'Friday',
-    mapID: '19-8qAhkFUbj8fRPtVuoPWnRtN8NyzoY',
-    pdfURL: 'https://assets.ctfassets.net/lievuslt1eqf/762wIwaCY24fK0TPbLuv6t/305ac466614e0b11e4e4c036fa325d05/midtown-garage-sale-2023-friday.pdf'
+  '2023-06-10': {
+    label: 'Saturday',
+    mapID: '1gd2FUqmirWp5k_DckLsIbtHyT7ZWvds',
+    pdfURL: 'https://assets.ctfassets.net/lievuslt1eqf/6DioHKn17vM5z0GFM6FGdp/d74ee303fe37d79d0f80aa159d184b60/midtown-yard-sale-2023-saturday.pdf'
   },
-  // '2023-06-10': {
-  //   label: 'Friday',
-  //   mapID: '',
-  //   pdfURL: ''
-  // },
-  // '2023-06-11': {
-  //   label: 'Friday',
-  //   mapID: '',
-  //   pdfURL: ''
-  // },
 }
 
 function LinkButton({ href, children }) {
@@ -95,14 +85,14 @@ export default function Sale() {
             </div>
 
             <div className="; lg:flex lg:justify-center">
-              <div><img className="; mx-auto" src={GarageSaleMap} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" /></div>
-              <div><img className="; mx-auto" src={GarageSaleAddresses} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" /></div>
+              <div><img className="; mx-auto" src={YardSaleMap} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" /></div>
+              <div><img className="; mx-auto" src={YardSaleAddresses} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" /></div>
             </div>
           </>
         ) : (
           <>
             <p className="; font-bold italic my-4">Check back the day of after 7am for maps and addresses.</p>
-            <img className="; mx-auto" src={MidtownGarageSale} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" />
+            <img className="; mx-auto" src={MidtownYardSale} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" />
           </>
         )}
       </div>
