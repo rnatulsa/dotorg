@@ -1,15 +1,15 @@
 import React from 'react'
 import Title from '@/components/title'
 import MidtownYardSale from '@/images/events/yard-sale/2023/midtown-yard-sale-2023.jpg'
-import YardSaleMap from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-saturday-map.png'
-import YardSaleAddresses from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-saturday-addresses.png'
+import YardSaleMap from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-sunday-map.png'
+import YardSaleAddresses from '@/images/events/yard-sale/2023/midtown-yard-sale-2023-sunday-addresses.png'
 import { DateTime } from 'luxon'
 
 const DAYS = {
-  '2023-06-10': {
-    label: 'Saturday',
-    mapID: '1gd2FUqmirWp5k_DckLsIbtHyT7ZWvds',
-    pdfURL: 'https://assets.ctfassets.net/lievuslt1eqf/6DioHKn17vM5z0GFM6FGdp/d74ee303fe37d79d0f80aa159d184b60/midtown-yard-sale-2023-saturday.pdf'
+  '2023-06-11': {
+    label: 'Sunday',
+    mapID: '1Rn9n-EG8q8BmX9uUArqIH4-A_5YSdgU',
+    pdfURL: 'https://assets.ctfassets.net/lievuslt1eqf/7pvRMui8eG6cCazaZwTT1f/3f3d66c7da8d7106b5653f16f5202a48/midtown-yard-sale-2023-sunday.pdf'
   },
 }
 
