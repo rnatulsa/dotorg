@@ -1,12 +1,12 @@
 import React from 'react'
 import Title from '@/components/title'
+import { DateTime } from 'luxon'
 import { css } from 'twin.macro'
 
 import { Gallery, GalleryText, GalleryButtons, GalleryButton } from '@/components/gallery'
 import { UpcomingEventsSection, UpcomingEvent } from '@/components/home/upcoming-events'
 import { WhatsNewsSection, WhatsNewsItem } from '@/components/home/whats-news'
 
-import MidtownYardSale from '@/images/events/yard-sale/2023/midtown-yard-sale-2023.jpg'
 import RNAalbum7 from '@/images/wix/home-page/gallery/RNAalbum7.jpg';
 const IMAGES = [
   require('@/images/wix/home-page/gallery/HouseSpring.jpg'),
@@ -53,7 +53,7 @@ export default function Home({ events }) {
   return <>
     <Title>Home</Title>
 
-    {/* <Gallery images={IMAGES} css={css`
+    <Gallery images={IMAGES} css={css`
       height: calc((100vw - 0px) * 0.5625);
       max-height: 75vh;
       min-height: 20vh;
@@ -64,13 +64,7 @@ export default function Home({ events }) {
       <GalleryButtons>
         <GalleryButton href={'/about-us'} text={'Welcome'} />
       </GalleryButtons>
-    </Gallery> */}
-    <div>
-      <a href="/sale" className="; block">
-        <img className="; mx-auto" src={MidtownYardSale} alt="Midtown Yard Sale - Hosted by Renaissance &amp; Florence Park" />
-      </a>
-      <p className="; text-center mt-6 mb-24">Visit the <a href="/sale">sale page</a> for maps and more information.</p>
-    </div>
+    </Gallery>
 
     <UpcomingEventsSection title="Upcoming Events">
       {events.map((event, i) => (
