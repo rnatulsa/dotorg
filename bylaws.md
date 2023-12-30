@@ -20,7 +20,7 @@ There shall be one class of membership. This membership shall be allowed one vot
 
 ### Section 2. Dues
 
-Dues to be a member in good standing shall be $15 per individual/$20 per household (two adult votes per household)/ $30 per business membership (one vote per membership.) Dues are for one year beginning January 1st and ending December 31st. This dues structure is effective the January 1st after the amended date listed above.
+Dues to be a member in good standing shall be $15 per individual / $20 per household (two adult votes per household) / $30 per business membership (one vote per membership.) Dues are for one year beginning January 1st and ending December 31st. This dues structure is effective the January 1st after the amended date listed above.
 
 ### Section 3. Meetings
 

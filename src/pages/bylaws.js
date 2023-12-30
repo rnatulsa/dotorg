@@ -30,7 +30,7 @@ export default function Bylaws() {
 
       <h3>Section 2. Dues</h3>
 
-      <p>Dues to be a member in good standing shall be $15 per individual/$20 per household (two adult votes per household)/ $30 per business membership (one vote per membership.) Dues are for one year beginning January 1st and ending December 31st. This dues structure is effective the January 1st after the amended date listed above.</p>
+      <p>Dues to be a member in good standing shall be $15 per individual / $20 per household (two adult votes per household) / $30 per business membership (one vote per membership.) Dues are for one year beginning January 1st and ending December 31st. This dues structure is effective the January 1st after the amended date listed above.</p>
 
       <h3>Section 3. Meetings</h3>
 

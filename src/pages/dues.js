@@ -1,37 +1,25 @@
 import React from 'react'
-import Link from 'next/link'
+import PropTypes from 'prop-types'
 import Title from '@/components/title'
 import Banner from '@/components/banner'
 import Section from '@/components/section'
 import RitzBanner from '@/images/wix/banners/RitzBanner.jpg'
 import styles from '@/styles/dues.module.css'
 
-const PayPalSingle = () => (
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-    <input type="hidden" name="cmd" value="_xclick" />
-    <input type="hidden" name="business" value="renaissance.neighbors@gmail.com" />
-    <input type="hidden" name="lc" value="US" />
-    <input type="hidden" name="item_name" value="RN Single Dues" />
-    <input type="hidden" name="item_number" value="Dues-1" />
-    <input type="hidden" name="amount" value="10.00" />
-    <input type="hidden" name="currency_code" value="USD" />
-    <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
-    <input type="hidden" name="button_subtype" value="services" />
-    <input type="hidden" name="no_note" value="0" />
-    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-  </form>
-)
+const RATES = {
+  couples: 20,
+  singles: 15,
+  business: 30,
+}
 
-const PayPalCouples = () => (
+const PayPalBuyNowForm = ({ rate, itemName, itemNumber }) => (
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
     <input type="hidden" name="cmd" value="_xclick" />
     <input type="hidden" name="business" value="renaissance.neighbors@gmail.com" />
     <input type="hidden" name="lc" value="US" />
-    <input type="hidden" name="item_name" value="RNA Couples Dues" />
-    <input type="hidden" name="item_number" value="Dues-2" />
-    <input type="hidden" name="amount" value="15.00" />
+    <input type="hidden" name="item_name" value={itemName} />
+    <input type="hidden" name="item_number" value={itemNumber} />
+    <input type="hidden" name="amount" value={rate} />
     <input type="hidden" name="currency_code" value="USD" />
     <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
     <input type="hidden" name="button_subtype" value="services" />
@@ -41,27 +29,15 @@ const PayPalCouples = () => (
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
   </form>
 )
+PayPalBuyNowForm.propTypes = {
+  rate: PropTypes.number.isRequired,
+  itemName: PropTypes.string.isRequired,
+  itemNumber: PropTypes.string.isRequired,
+}
 
-const PayPalBusiness = () => (
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-    <input type="hidden" name="cmd" value="_xclick" />
-    <input type="hidden" name="business" value="renaissance.neighbors@gmail.com" />
-    <input type="hidden" name="lc" value="US" />
-    <input type="hidden" name="item_name" value="RNA Business Dues" />
-    <input type="hidden" name="item_number" value="Dues-B" />
-    <input type="hidden" name="amount" value="25.00" />
-    <input type="hidden" name="currency_code" value="USD" />
-    <input type="hidden" name="cancel_return" value="https://www.rnatulsa.org/dues" />
-    <input type="hidden" name="button_subtype" value="services" />
-    <input type="hidden" name="no_note" value="0" />
-    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-  </form>
-)
+const rate = value => value.toLocaleString('en-US', { style: 'currency', currency: "USD" }).replace('.00', '') + '/year'
 
 export default function Dues() {
-
   return <>
     <Title>Dues</Title>
 
@@ -80,9 +56,9 @@ export default function Dues() {
       <div className="; flex-1">
         <h5 className="; text-center">Rates</h5>
         <ul>
-          <li><span>Couples Rate</span> $15/year for two adults (two votes) in same residence</li>
-          <li><span>Single Rate</span> $10/year for one adult (one vote) at a residence</li>
-          <li><span>Business Rate</span> $25/year for one business (one vote) located within neighborhood</li>
+          <li><span>Couples Rate</span> {rate(RATES.couples)} for two adults (two votes) in same residence</li>
+          <li><span>Single Rate</span> {rate(RATES.singles)} for one adult (one vote) at a residence</li>
+          <li><span>Business Rate</span> {rate(RATES.business)} for one business (one vote) located within neighborhood</li>
         </ul>
         <p className="; mx-auto" style={{ width: '79px' }}>
           <svg preserveAspectRatio="xMidYMid meet" data-bbox="34.501 48 130.997 104.001" viewBox="34.501 48 130.997 104.001" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" style={{ width: '79px', height: '62px' }}>
@@ -106,14 +82,14 @@ export default function Dues() {
       <div className="; flex-1">
         <h5 className="; text-center">Online Payments</h5>
         <div className={styles.paypalButtons}>
-          <p>Couples Rate</p>
-          <PayPalCouples />
+          <p>Couples Rate - {rate(RATES.couples)}</p>
+          <PayPalBuyNowForm rate={RATES.couples} itemName={'RNA Couples Dues'} itemNumber={'Dues-2'} />
 
-          <p>Single Rate</p>
-          <PayPalSingle />
+          <p>Single Rate - {rate(RATES.singles)}</p>
+          <PayPalBuyNowForm rate={RATES.singles} itemName={'RNA Single Dues'} itemNumber={'Dues-1'} />
 
-          <p>Business Rate</p>
-          <PayPalBusiness />
+          <p>Business Rate - {rate(RATES.business)}</p>
+          <PayPalBuyNowForm rate={RATES.business} itemName={'RNA Business Dues'} itemNumber={'Dues-B'} />
         </div>
       </div>
     </Section>
