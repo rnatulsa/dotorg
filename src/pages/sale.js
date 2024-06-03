@@ -22,7 +22,7 @@ function LinkButton({ href, children }) {
 }
 
 export default function Sale() {
-  const [day, setDay] = React.useState()
+  const [day, setDay] = React.useState(DAYS['2023-06-10'])
 
   const update = () => {
     const now = DateTime.now().setZone('America/Chicago')
@@ -32,11 +32,11 @@ export default function Sale() {
     }
   }
 
-  React.useEffect(() => {
-    update()
-    const interval = setInterval(update, 60000)
-    return () => clearInterval(interval)
-  })
+  // React.useEffect(() => {
+  //   update()
+  //   const interval = setInterval(update, 60000)
+  //   return () => clearInterval(interval)
+  // })
 
   return <>
     <Title>Midtown Yard Sale Extravaganza</Title>
